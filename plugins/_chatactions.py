@@ -92,7 +92,7 @@ async def DummyHandler(ult):
                         view_messages=False,
                     )
                     await ult.respond(
-                        f'**@UltroidBans:** Banned user detected and banned!\n`{str(is_banned)}`.\nBan reason: {is_banned["reason"]}',
+                        f'**@UltroidBans:** Banned user detected and banned!\n`{str(is_banned)}`.\nBan reason: {is_banned["karena"]}',
                     )
 
             except BaseException:
@@ -125,7 +125,7 @@ async def DummyHandler(ult):
             uu = user.username
             username = f"@{uu}" if uu else mention
             wel = get_welcome(ult.chat_id)
-            msgg = wel["welcome"]
+            msgg = wel["welcum"]
             med = wel["media"] or None
             userid = user.id
             msg = None
