@@ -58,7 +58,7 @@ async def _help(ult):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["VCBot"][plug]:
                     output += i
-                output += "\n© @TeamUltroid"
+                output += "\n© @pamerdong"
                 await ult.eor(output)
             else:
                 try:
@@ -101,7 +101,7 @@ async def _help(ult):
                     elif HELP.get("VCBot") and file in HELP["VCBot"]:
                         for i in HELP["VCBot"][file]:
                             output += i
-                    output += "\n© @TeamUltroid"
+                    output += "\n© @Chakszzz"
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
