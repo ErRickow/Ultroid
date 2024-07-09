@@ -82,14 +82,14 @@ async def _help(ult):
                                 break
                     if not file:
                         # the enter command/plugin name is not found
-                        text = f"`{plug}` is not a valid plugin!"
+                        text = f"`{plug}` bukan plugins yang valid Njir..!"
                         best_match = None
                         for _ in compare_strings:
                             if plug in _ and not _.startswith("_"):
                                 best_match = _
                                 break
                         if best_match:
-                            text += f"\nDid you mean `{best_match}`?"
+                            text += f"\nMaksud lu `{best_match}`?"
                         return await ult.eor(text)
                     output = f"**Command** `{plug}` **found in plugin** - `{file}`\n"
                     if file in HELP["Official"]:
@@ -105,7 +105,7 @@ async def _help(ult):
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
-            await ult.eor("Error 🤔 occured.")
+            await ult.eor("Error 🤔 hmmm.")
     else:
         try:
             results = await ult.client.inline_query(asst.me.username, "ultd")
