@@ -154,14 +154,14 @@ afk_5: "❏ **#AFK**.\n\n**Karena:** `{}`"
 afk_6: "❏ Dadah Gua AFK dulu."
 
 # bot
-bot_1: "Er Userbot 🗿."
+bot_1: "❍ ➥Er Userbot 🗿."
 bot_2: "Stats"
 bot_3: "Repo"
 bot_4: "Support"
 bot_5: "`Sedang Merestart...`"
-alive_1: "**Er Userbot 🗿...**\n\n**{}**\n\n┏━━━━━━━━━━━━━━━━━━━━━\n┣ **🎗️Owner🎗️** - `{}`\n┣ **♦️Version♦️** - `{}`\n┣ **🗿Py-ErUbot🗿** - `{}`\n┣ **✨UpTime✨** - `{}`\n┣ **🐍Python🐍** - `{}`\n┣ **🀄Telethon🀄** - `{}`\n┣ **♟️Branch♟️** - rewrite `{}`\n┗━━━━━━━━━━━━━━━━━━━━━"
+alive_1: "**❍ ➥Er Userbot 🗿...**\n\n**{}**\n\n┏━━━━━━━━━━━━━━━━━━━━━\n┣ **🎗️Owner🎗️** - `{}`\n┣ **♦️Version♦️** - `{}`\n┣ **🗿Py-ErUbot🗿** - `{}`\n┣ **✨UpTime✨** - `{}`\n┣ **🐍Python🐍** - `{}`\n┣ **🀄Telethon🀄** - `{}`\n┣ **♟️Branch♟️** - Rewrite `{}`\n┗━━━━━━━━━━━━━━━━━━━━━"
 log: "**Heroku** Ultroid Logs.\nPaste [disini]({}) juga!"
-ping: "**Pong🏓 -** `{}ms`\n**Aktif** - `{}`"
+ping: "❍**➥ᴘɪɴɢ!⚡** ▸ `{}ms`\n❍**➥ᴀᴋᴛɪꜰ☑** ▸ `{}'"
 usage: "**⚙️ Informasi Dyno ⚙️**:\n\n➠ **Penggunaan Dyno** `{}`:\n  •  **{}h**  **{}m |** `[{}%]`\n➠ **Sisa kuota dyno bulan ini :**\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Total Ruang Disk:**: `{}`\n**Terpakai**: `{}`\n**Kosong**: `{}`\n\n**📊 Penggunaan Data 📊**\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`"
 usage_simple: "**Total Ruang Disk:** `{}`\n**Terpakai:** `{}`\n**Kosong:** `{}`\n\n**📊 Penggunaan Data 📊**\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`"
 Matideh: "SelamatTinggal {}.\n`Sedang Mematikan bot...`"
@@ -186,7 +186,7 @@ bd_8: "`Menghapus...`"
 bd_9: "Channel sudah dihapus dari database."
 
 # calculator
-calc_1: "• Ultroid Inline Calculator •"
+calc_1: "• ErUbot Inline Calculator •"
 calc_2: "Buka Kalkulator Lagi"
 
 # channel hacks
