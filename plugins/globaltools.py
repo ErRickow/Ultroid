@@ -25,15 +25,15 @@
 • `{i}gadmincast <text/reply>` `Globally broadcast in your admin chats`
 • `{i}gucast <text/reply>` `Globally send msg in all pm users`
 
-• `{i}gblacklist <chat id/username/nothing (for current chat)`
-   Add chat to blacklist and ignores global broadcast.
-• `{i}ungblacklist` `Remove the chat from blacklist.`
+• `{i}addbl <chat id/username/kosongin (di dalam grup tsb.)`
+   Tambahkan Group ke daftar hitam.
+• `{i}unbl` `Hapus group dalam daftar hitam.`
 
 • `{i}gpromote <reply to user> <channel/group/all> <rank>`
     globally promote user where you are admin
     - Set whether To promote only in groups/channels/all.
     Eg- `gpromote group boss` ~ promotes user in all grps.
-        `gpromote @username all sar` ~ promote the user in all group & channel
+        `gpromote @username all sar` ~ promote the user in all group >
 • `{i}gdemote` - `demote user globally`
 """
 import asyncio
@@ -727,14 +727,14 @@ async def gstat_(e):
     await xx.edit(msg)
 
 
-@ultroid_cmd(pattern="gblacklist$")
+@ultroid_cmd(pattern="addbl$")
 async def blacklist_(event):
-    await gblacker(event, "add")
+    await gblacker(event, "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ")
 
 
-@ultroid_cmd(pattern="ungblacklist$")
+@ultroid_cmd(pattern="unbl$")
 async def ungblacker(event):
-    await gblacker(event, "remove")
+    await gblacker(event, "ʙᴇʙᴀꜱ")
 
 
 async def gblacker(event, type_):
@@ -745,9 +745,7 @@ async def gblacker(event, type_):
         except Exception as e:
             return await event.eor(f"**ERROR**\n`{str(e)}`")
     except IndexError:
-        chat_id = event.chat_id
-    if type_ == "add":
+        chat_id = event.chat_id                                                                          if type_ == "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ":
         keym.add(chat_id)
-    elif type_ == "remove":
-        keym.remove(chat_id)
-    await event.eor(f"Global Broadcasts: \n{type_}ed {chat_id}")
+    elif type_ == "ʙᴇʙᴀꜱ":                                                                                   keym.remove(chat_id)
+    await event.eor(f"​❍➥🇬​​🇷​​🇺​​🇵​ ​🇮​​🇳​​🇮​ ❖⠇{chat_id}⠇❖\n❍➥ᴛᴇʟᴀʜ {type_} ᴅᴀʟᴀᴍ ​𝄃𝄃🇸​​🇭​​🇦​​🇩​​🇴​​🇼​ ​🇷​​🇪​​🇦​​🇱​​🇲​𝄃𝄃")
