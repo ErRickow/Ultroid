@@ -12,7 +12,6 @@ START = """
 
 ✘  /start : Cek aku hidup atau tidak.
 ✘  /help : Menu Bantuan.
-✘  /repo : Bot's Repo..
 
 🧑‍💻 Join **@Pamerdong**
 """
@@ -98,7 +97,7 @@ def get_buttons():
             del keys[i]
         BTTS.append(BT)
     url = f"https://t.me/{asst.me.username}?startgroup=true"
-    BTTS.append([Button.url("Add me to Group", url)])
+    BTTS.append([Button.url("Tambahkan Saya Ke Group", url)])
     return BTTS
 
 
@@ -107,7 +106,7 @@ async def helpish(event):
     if not event.is_private:
         url = f"https://t.me/{asst.me.username}?start=start"
         return await event.reply(
-            "Contact me in PM for help!", buttons=Button.url("Click me for Help", url)
+            "Contact me in PM for help!", buttons=Button.url("Klik Gw Untuk Bantuan", url)
         )
     if str(event.sender_id) in owner_and_sudos() and (
         udB.get_key("DUAL_MODE") and (udB.get_key("DUAL_HNDLR") == "/")
