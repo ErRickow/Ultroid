@@ -745,7 +745,9 @@ async def gblacker(event, type_):
         except Exception as e:
             return await event.eor(f"**ERROR**\n`{str(e)}`")
     except IndexError:
-        chat_id = event.chat_id                                                                          if type_ == "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ":
+        chat_id = event.chat_id
         keym.add(chat_id)
-    elif type_ == "ʙᴇʙᴀꜱ":                                                                                   keym.remove(chat_id)
+    elif type_ == "ʙᴇʙᴀꜱ":
+    if type_ == "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ":
+    keym.remove(chat_id)
     await event.eor(f"​❍➥🇬​​🇷​​🇺​​🇵​ ​🇮​​🇳​​🇮​ ❖⠇{chat_id}⠇❖\n❍➥ᴛᴇʟᴀʜ {type_} ᴅᴀʟᴀᴍ ​\n𝄃𝄃🇸​​🇭​​🇦​​🇩​​🇴​​🇼​ ​🇷​​🇪​​🇦​​🇱​​🇲​𝄃𝄃")
