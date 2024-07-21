@@ -16,9 +16,9 @@ from pyUltroid.fns.admins import admin_check
 from . import *
 
 
-@asst_cmd(pattern="decide")
+@asst_cmd(pattern="tentukan")
 async def dheh(e):
-    text = ["Yes", "NoU", "Maybe", "IDK"]
+    text = ["Ya", "Apalah", "Mungkin", "GTW"]
     text = random.choice(text)
     ri = e.reply_to_msg_id or e.id
     await e.client.send_message(e.chat_id, text, reply_to=ri)
@@ -46,12 +46,12 @@ async def oqha(e):
 @asst_cmd(pattern="kickme$")
 async def doit(e):
     if e.sender_id in DEVLIST:
-        return await eod(e, "`I will Not Kick You, my Developer..`")
+        return await eod(e, "`Gw Gabakal Ngekick Lu My Dev..`")
     try:
         await e.client.kick_participant(e.chat_id, e.sender_id)
     except Exception as Fe:
         return await e.eor(str(Fe), time=5)
-    await e.eor("Yes, You are right, get out.", time=5)
+    await e.eor("YES, LU BENER KELUAR LAH SANA.", time=5)
 
 
 @asst_cmd(pattern="joke$")
