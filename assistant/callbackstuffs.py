@@ -50,7 +50,7 @@ def text_to_url(event):
 
 _buttons = {
     "otvars": {
-        "text": "Other Variables to set for @TeamUltroid:",
+        "text": "Other Variables to set for @pamerdong:",
         "buttons": [
             [
                 Button.inline("Tᴀɢ Lᴏɢɢᴇʀ", data="taglog"),
@@ -340,7 +340,7 @@ async def changes(okk):
             if len(tl_chnglog) > 700:
                 tl_chnglog = f"{tl_chnglog[:700]}..."
                 button.append([Button.inline("View Complete", "changesall")])
-            await okk.edit("• Writing Changelogs 📝 •")
+            await okk.edit("• Writing Changelogs ✏️ •")
             img = await Carbon(
                 file_name="changelog",
                 code=tl_chnglog,
@@ -348,7 +348,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Ultroid Userbot •**{cli}", file=img, buttons=button
+                f"**• Er Userbot •**{cli}", file=img, buttons=button
             )
         except Exception as er:
             LOGS.exception(er)
@@ -455,7 +455,7 @@ async def _(e):
         code = await conv.get_response()
         if GDrive._create_token_file(code=code.text):
             await conv.send_message(
-                "`Success!\nYou are all set to use Google Drive with Ultroid Userbot.`",
+                "`Success!\nYou are all set to use Google Drive with Er Userbot.`",
                 buttons=Button.inline("Main Menu", data="setter"),
             )
         else:
@@ -723,7 +723,7 @@ async def eddon(event):
     var = "ADDONS"
     await setit(event, var, "True")
     await event.edit(
-        "Done! ADDONS has been turned on!!\n\n After Setting All Things Do Restart",
+        "Done! ADDONS has been turned on!!\n\n Setelah Selesai Men-setting Lakukan Restart",
         buttons=get_back_button("eaddon"),
     )
 
@@ -732,7 +732,7 @@ async def eddon(event):
 async def eddof(event):
     udB.set_key("ADDONS", "False")
     await event.edit(
-        "Done! ADDONS has been turned off!! After Setting All Things Do Restart",
+        "Done! ADDONS has been turned off!! Setelah Men-setting Lakukan Restart",
         buttons=get_back_button("eaddon"),
     )
 
