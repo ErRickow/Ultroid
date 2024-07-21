@@ -70,7 +70,7 @@ class Loader:
                 self._logger.exception(exc)
                 continue
             if _single and log:
-                self._logger.info(f"Successfully Loaded {plugin}!")
+                self._logger.info(f"Success Load {plugin}!")
             if callable(after_load):
                 if func == import_module:
                     plugin = plugin.split(".")[-1]
