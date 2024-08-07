@@ -47,7 +47,7 @@ async def get_chat_info(chat, event):
     elif isinstance(chat, types.Chat):
         chat_info = await event.client(functions.messages.GetFullChatRequest(chat))
     else:
-        return await event.eor("`Use this for Group/Channel.`")
+        return await event.reply("`Gunakan Group/Channel ini.`")
     full = chat_info.full_chat
     chat_photo = full.chat_photo
     broadcast = getattr(chat, "broadcast", False)
