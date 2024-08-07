@@ -67,8 +67,8 @@ async def _(e):
             raise ValueError("Invalid Username.")
     except IndexError:
         sur = await e.builder.article(
-            title="Give Username",
-            description="You Didn't Type Username or id.",
+            title="Kasih Username",
+            description="Lu kga tulis username.",
             text="You Didn't Type Username or id.",
         )
         return await e.answer([sur])
