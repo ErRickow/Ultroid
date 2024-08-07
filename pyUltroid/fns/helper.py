@@ -157,7 +157,7 @@ if run_as_module:
                 if re.search(dan, read):
                     os.remove(dl)
                     return await ok.edit(
-                        f"**Installation Aborted.**\n**Reason:** Occurance of `{dan}` in `{reply.file.name}`.\n\nIf you trust the provider and/or know what you're doing, use `{HNDLR}install f` to force install.",
+                        f"**Instalasi Gagal.**\n**Alasan:** Nganu dari `{dan}` di `{reply.file.name}`.\n\nJika lu percaya kepada yang buat, gunakan `{HNDLR}install f` untuk memaksa Instalasi.",
                     )
         try:
             load_addons(dl)  # dl.split("/")[-1].replace(".py", ""))
