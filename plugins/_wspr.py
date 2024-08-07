@@ -75,8 +75,8 @@ async def _(e):
     except ValueError as er:
         LOGS.exception(er)
         sur = await e.builder.article(
-            title="User Not Found",
-            description="Make sure username or id is correct.",
+            title="User tidak ditemukan",
+            description="Pastikan username/id nya benar.",
             text="Make sure username or id is correct.",
         )
         return await e.answer([sur])
