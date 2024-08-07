@@ -35,7 +35,7 @@ ULTSTRING = """🎇 **Terima Kasih Sudah Deploy Er UserBot!**
 
 @ultroid_cmd(
     pattern="repo$",
-    manager=True,
+    manager=False,
 )
 async def repify(e):
     try:
