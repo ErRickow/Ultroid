@@ -275,7 +275,7 @@ async def unp(ult):
         return await xx.reply(get_string("adm_2"))
     except Exception as e:
         return await xx.reply(f"**ERROR:**`{e}`")
-    await xx.edit("`Unpinned!`")
+    await xx.reply("`Unpinned!`")
 
 
 @ultroid_cmd(
@@ -288,7 +288,7 @@ async def unp(ult):
 async def pin_message(ult):
     match = ult.pattern_match.group(1).strip()
     if not ult.is_reply:
-        return await ult.eor("`Reply to message..`", time=6)
+        return await ult.Reply("`Reply to message..`", time=6)
     if not match:
         return await ult.eor("`Please provide time..`", time=8)
     msg = await ult.eor(get_string("com_1"))
