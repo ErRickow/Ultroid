@@ -154,10 +154,10 @@ def ask_and_wait_opt():
                 print(f"{Fore.YELLOW}- Discarded {opt}.\n")
     elif strm == "i":
         names = " ".join(OPT_PACKAGES.keys())
-        print(f"{Fore.YELLOW}Installing all packages...")
+        print(f"{Fore.YELLOW}Menginstall Semua apt...")
         system(f"pip install {names}")
     elif strm != "s":
-        print("Invalid Input\n* Enter Again...")
+        print("Invalid Input\n* Ulangi...")
         ask_and_wait_opt()
 
 
