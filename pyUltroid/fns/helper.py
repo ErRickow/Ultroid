@@ -570,7 +570,7 @@ async def restart(ult=None):
             Heroku = heroku3.from_key(Var.HEROKU_API)
             app = Heroku.apps()[Var.HEROKU_APP_NAME]
             if ult:
-                await ult.edit("`Restarting your app, please wait for a minute!`")
+                await ult.edit("`Sedang Merestart, Tunggu sebentar..!`")
             app.restart()
         except BaseException as er:
             if ult:
