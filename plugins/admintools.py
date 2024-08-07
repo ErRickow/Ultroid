@@ -268,13 +268,13 @@ async def unp(ult):
     if ult.is_reply:
         msg = ult.reply_to_msg_id
     elif ch != "all":
-        return await xx.edit(get_string("unpin_1").format(HNDLR))
+        return await xx.reply(get_string("unpin_1").format(HNDLR))
     try:
         await ult.client.unpin_message(ult.chat_id, msg)
     except BadRequestError:
-        return await xx.edit(get_string("adm_2"))
+        return await xx.reply(get_string("adm_2"))
     except Exception as e:
-        return await xx.edit(f"**ERROR:**`{e}`")
+        return await xx.reply(f"**ERROR:**`{e}`")
     await xx.edit("`Unpinned!`")
 
 
