@@ -51,7 +51,7 @@ async def _(e):
             return await e.eor(get_string("help_3"))
         await results[0].click(e.chat_id, reply_to=e.reply_to_msg_id, hide_via=True)
         return await e.delete()
-    await e.eor(get_string("wspr_3"))
+    await e.reply(get_string("wspr_3"))
 
 
 @in_pattern("wspr", owner=True)
