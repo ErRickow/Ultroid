@@ -73,7 +73,7 @@ def load_other_plugins(addons=None, pmbot=None, manager=None, vcbot=None):
             rmtree("addons")
         if not os.path.exists("addons"):
             subprocess.run(
-                f"git clone -q -b {Repo().active_branch} https://github.com/TeamUltroid/UltroidAddons.git addons",
+                f"git clone -q -b {Repo().active_branch} https://github.com/ErRickow/ErUbotAddons.git addons",
                 shell=True,
             )
         else:
