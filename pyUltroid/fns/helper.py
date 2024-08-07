@@ -553,11 +553,11 @@ async def progress(current, total, event, start, type_of_ps, file_name=None):
             )
         )
         if file_name:
-            await event.edit(
+            await event.reply(
                 "`✦ {}`\n\n`File Nama: {}`\n\n{}".format(type_of_ps, file_name, tmp)
             )
         else:
-            await event.edit("`✦ {}`\n\n{}".format(type_of_ps, tmp))
+            await event.reply("`✦ {}`\n\n{}".format(type_of_ps, tmp))
 
 
 # ------------------System\\Heroku stuff----------------
