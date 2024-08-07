@@ -157,7 +157,7 @@ async def autobot():
     if udB.get_key("BOT_TOKEN"):
         return
     await ultroid_bot.start()
-    LOGS.info("MAKING A TELEGRAM BOT FOR YOU AT @BotFather, Kindly Wait")
+    LOGS.info("SEDANG MEMBUATKAN BOT DI @BotFather, Sabar Dulu")
     who = ultroid_bot.me
     name = who.first_name + "'s Bot"
     if who.username:
