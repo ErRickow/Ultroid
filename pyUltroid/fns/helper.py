@@ -172,9 +172,9 @@ if run_as_module:
             output += "\n© @pamerdong"
             await eod(ok, f"✓ `Er Userbot - terInstall`: `{plug}` ✓\n\n{output}")
         elif plug in CMD_HELP:
-            output = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
+            output = f"Nama Plugins-{plug}\n\n✘ Commands Tersedia-\n\n"
             output += str(CMD_HELP[plug])
-            await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓\n\n{output}")
+            await eod(ok, f"✓ `Er Userbot - terInstall`: `{plug}` ✓\n\n{output}")
         else:
             try:
                 x = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
