@@ -288,9 +288,9 @@ async def unp(ult):
 async def pin_message(ult):
     match = ult.pattern_match.group(1).strip()
     if not ult.is_reply:
-        return await ult.Reply("`Reply to message..`", time=6)
+        return await ult.Reply("`Reply ke pesan..`", time=6)
     if not match:
-        return await ult.eor("`Please provide time..`", time=8)
+        return await ult.eor("`Tolong tambahkan waktu..`", time=8)
     msg = await ult.eor(get_string("com_1"))
     msg_id = ult.reply_to_msg_id
     try:
