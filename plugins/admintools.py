@@ -245,7 +245,7 @@ async def pin(msg):
     if me.is_private:
         text = "`Pinned.`"
     else:
-        text = f"Pinned [This Message]({me.message_link}) !"
+        text = f"Pinned [Pesan Ini]({me.message_link}) !"
     try:
         await msg.client.pin_message(msg.chat_id, me.id, notify=False)
     except BadRequestError:
