@@ -133,7 +133,7 @@ clone_repo() {
             export BRANCH="main"
         fi
         mkdir -p $DIR
-        echo -e "Cloning Ultroid ${BRANCH}... "
+        echo -e "Cloning ErUbot ${BRANCH}... "
         git clone -b $BRANCH $REPO $DIR
     fi
 }
