@@ -41,7 +41,7 @@ def clear_screen():
 
 def get_api_id_and_hash():
     print(
-        "Get your API ID and API HASH from my.telegram.org or @ScrapperRoBot to proceed.\n\n",
+        "Dapatkan API ID dan API HASH dari my.telegram.org atau @ScrapperRoBot untuk memproses.\n\n",
     )
     try:
         API_ID = int(input("Please enter your API ID: "))
@@ -81,11 +81,11 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
-            print("Generating a string session for •ULTROID•")
+            print("Generating a string session for •ErUbot•")
             try:
                 ultroid.send_message(
                     "me",
-                    f"**ULTROID** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**ErUbot** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -151,7 +151,7 @@ def main():
     try:
         type_of_ss = int(
             input(
-                "\nUltroid supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\nErUbot supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:
