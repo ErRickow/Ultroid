@@ -113,7 +113,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 ]
                 return await event.answer(
                     res,
-                    switch_pm=f"🤖: Assistant of {OWNER}",
+                    switch_pm=f"🤖: Assistant dari {OWNER}",
                     switch_pm_param="start",
                 )
             try:
