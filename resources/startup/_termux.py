@@ -74,12 +74,12 @@ INFO_TEXT = f"""
     -    autopic        -     nightmode
     -    blacklist      -     forcesubscribe
 
-4. Lu Gabisa Pake 'VCBOT' di Termux.
+4. Lu gabisa pake 'VCBOT' di Termux.
 
-5. You can't use 'MongoDB' on Termux (Android).
+5. Lu gabisa pake 'MongoDB' di Termux (Android).
 {Fore.RESET}
-* Hope you are smart enought to understand.
-* Enter 'A' to Continue, 'E' to Exit..\n
+* Gw harap lu pinter lah y.
+* Tekan 'A' untuk lanjut, 'E' untuk Keluar..\n
 """
 
 
