@@ -449,7 +449,7 @@ async def fetch_ann():
             if key not in get_:
                 cont = upt[key]
                 if isinstance(cont, dict) and cont.get("lang"):
-                    if cont["lang"] != (udB.get_key("language") or "en"):
+                    if cont["lang"] != (udB.get_key("language") or "id"):
                         continue
                     cont = cont["msg"]
                 if isinstance(cont, str):
