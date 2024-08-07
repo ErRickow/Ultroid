@@ -105,7 +105,7 @@ async def _help(ult):
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
-            await ult.eor("Error 🤔 occured.")
+            await ult.reply("Error 🤔 occured.")
     else:
         try:
             results = await ult.client.inline_query(asst.me.username, "ultd")
