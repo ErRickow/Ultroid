@@ -158,7 +158,7 @@ async def allcmds(event, telegraph):
             txt += HNDLR + zz + "\n"
         txt += "\n\n"
     t = telegraph.create_page(title="ErUbot All Cmds", content=[txt])
-    await eor(event, f"All Ultroid Cmds : [Click Here]({t['url']})", link_preview=False)
+    await eor(event, f"All Er UserBot Cmds : [Click Here]({t['url']})", link_preview=False)
 
 
 async def ReTrieveFile(input_file_name):
