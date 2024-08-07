@@ -243,12 +243,12 @@ async def autopilot():
             msg_ = "'LOG_CHANNEL' tidak ditemukan! Tambahkan jika ingin menggunakan 'BOTMODE'"
             LOGS.error(msg_)
             return await _save(msg_)
-        LOGS.info("Creating a Log Channel for You!")
+        LOGS.info("Membuat Channel logs untukmu!")
         try:
             r = await ultroid_bot(
                 CreateChannelRequest(
-                    title="My Ultroid Logs",
-                    about="My Ultroid Log Group\n\n Join @TeamUltroid",
+                    title="Er Userbot Logs",
+                    about="Logs doang\n\n Join @pamerdong",
                     megagroup=True,
                 ),
             )
