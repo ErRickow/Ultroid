@@ -236,7 +236,7 @@ async def autopilot():
         async def _save(exc):
             udB._cache["LOG_CHANNEL"] = ultroid_bot.me.id
             await asst.send_message(
-                ultroid_bot.me.id, f"Failed to Create Log Channel due to {exc}.."
+                ultroid_bot.me.id, f"Gagal membuat chammel karena {exc}.."
             )
 
         if ultroid_bot._bot:
