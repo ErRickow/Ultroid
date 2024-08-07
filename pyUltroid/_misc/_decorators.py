@@ -164,9 +164,9 @@ def ultroid_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n"
-                ftext += "**Py-Ultroid Version:** `" + str(pyver)
-                ftext += "`\n**Ultroid Version:** `" + str(ult_ver)
+                ftext = "**ErUbot Client Error:** `Teruskan pesan ini ke` @chakszzz\n\n"
+                ftext += "**Py-ErUbot Version:** `" + str(pyver)
+                ftext += "`\n**Er UserBot Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
                 ftext += f"`\n**Hosted At:** `{HOSTED_ON}`\n\n"
                 ftext += "--------START ULTROID CRASH LOG--------"
