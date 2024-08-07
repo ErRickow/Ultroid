@@ -14,7 +14,7 @@ ULTROID = r"""
  | \  \USERBOT REWRITE BY ER
  |  \
  | |
- | |       ER USERBOT ©2024
+ | |     ER USERBOT ©2024
   \|
 """
 
