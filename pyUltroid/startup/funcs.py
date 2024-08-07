@@ -473,8 +473,8 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """🎇 **Thanks for Deploying Ultroid Userbot!**
-• Here, are the Some Basic stuff from, where you can Know, about its Usage."""
+        MSG = """🎇 **Terima Kasih Sudah Deploy Er Userbot!**
+• Ini, beberapa basic stuff, yang kamu cepat tau, tentang kegunaannya."""
         PHOTO = "https://graph.org/file/54a917cc9dbb94733ea5f.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
