@@ -253,12 +253,12 @@ if not path.exists(".env"):
 
 print(with_header(f"\n{Fore.GREEN}Sudah Selesai Semua! 🥳"))
 sleep(0.2)
-print(f"Use 'bash startup' to try running Ultroid.{Fore.RESET}")
+print(f"Gunakan 'bash startup' untuk start ErUbot.{Fore.RESET}")
 sleep(0.5)
 print(
     "\nYou can head over to @UltroidSupportChat, if you get stuck somewhere, and need help."
 )
 sleep(0.5)
-print("\nMade with ❤️ by @TeamUltroid...")
+print("\nMade with ❤️ by @chakszzz...")
 
 system("pip3 uninstall -q colorama -y")
