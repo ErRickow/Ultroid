@@ -31,7 +31,7 @@ async def af(e):
     for z in heh:
         add_blacklist(int(chat), z.lower())
     ultroid_bot.add_handler(blacklist, events.NewMessage(incoming=True))
-    await e.eor(get_string("blk_2").format(wrd))
+    await e.reply(get_string("blk_2").format(wrd))
 
 
 @ultroid_cmd(pattern="remblacklist( (.*)|$)", admins_only=True)
@@ -44,15 +44,15 @@ async def rf(e):
     heh = wrd.split(" ")
     for z in heh:
         rem_blacklist(int(chat), z.lower())
-    await e.eor(get_string("blk_4").format(wrd))
+    await e.reply(get_string("blk_4").format(wrd))
 
 
 @ultroid_cmd(pattern="listblacklist$", admins_only=True)
 async def lsnote(e):
     if x := list_blacklist(e.chat_id):
         sd = get_string("blk_5")
-        return await e.eor(sd + x)
-    await e.eor(get_string("blk_6"))
+        return await e.reply(sd + x)
+    await e.reply(get_string("blk_6"))
 
 
 async def blacklist(e):
