@@ -180,7 +180,7 @@ if run_as_module:
                 x = f"Nama Plugins-{plug}\n\n✘ Commands Tersedia-\n\n"
                 for d in LIST[plug]:
                     x += HNDLR + d + "\n"
-                await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓\n\n`{x}`")
+                await eod(ok, f"✓ `Er Userbot - terInstall`: `{plug}` ✓\n\n`{x}`")
             except BaseException:
                 await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓")
 
