@@ -133,7 +133,7 @@ async def _(e):
             status = "Last seen weeks ago"
         else:
             status = "Tidak bisa bilang"
-        text = f"**Name:**    `{user.first_name}`\n"
+        text = f"**Nama:**    `{user.first_name}`\n"
         text += f"**Id:**    `{user.id}`\n"
         if user.username:
             text += f"**Username:**    `{user.username}`\n"
@@ -142,7 +142,7 @@ async def _(e):
             text += f"**Mention:**    `{mention}`\n"
             url = f"tg://user?id={user.id}"
         text += f"**Status:**    `{status}`\n"
-        text += f"**About:**    `{logi.full_user.about}`"
+        text += f"**Tentang:**    `{logi.full_user.about}`"
         button = [
             Button.url("Private", url=url),
             Button.switch_inline(
