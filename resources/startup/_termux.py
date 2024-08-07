@@ -122,15 +122,15 @@ def ask_process_apt_install():
         exit(0)
     elif strm == "a":
         for apt in APT_PACKAGES:
-            print(f"* Do you want to install '{apt}'? [Y/N] ")
+            print(f"* Lu Pengen Install '{apt}'? [Y/N] ")
             if yes_no_apt():
-                print(f"Installing {apt}...")
+                print(f"Sedang Menginstall {apt}...")
                 system(f"apt install {apt} -y")
             else:
                 print(f"- Discarded {apt}.\n")
     elif strm == "i":
         names = " ".join(APT_PACKAGES)
-        print("Installing all apt-packages...")
+        print("Menginstall Semua Apt...")
         system(f"apt install {names} -y")
     elif strm != "s":
         print("Invalid Input\n* Enter Again...")
