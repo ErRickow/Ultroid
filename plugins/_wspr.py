@@ -89,8 +89,8 @@ async def _(e):
         return await e.answer([sur])
     button = [
         [
-            Button.inline("Secret Msg", data=f"dd_{e.id}"),
-            Button.inline("Delete Msg", data=f"del_{e.id}"),
+            Button.inline("Pesan rahasia sayang", data=f"dd_{e.id}"),
+            Button.inline("Hapus Pesan", data=f"del_{e.id}"),
         ],
         [
             Button.switch_inline(
