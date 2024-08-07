@@ -248,7 +248,7 @@ async def autopilot():
             r = await ultroid_bot(
                 CreateChannelRequest(
                     title="Er Userbot Logs",
-                    about="Logs doang\n\n Join @pamerdong",
+                    about="Logs doang\n\n Join @pamerdong\ncontact : @chakszzz",
                     megagroup=True,
                 ),
             )
