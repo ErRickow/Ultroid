@@ -33,7 +33,7 @@ from . import HNDLR, LOGS, eod, eor, get_string, inline_mention, types, ultroid_
     fullsudo=True,
 )
 async def prmte(ult):
-    xx = await ult.eor(get_string("com_1"))
+    xx = await ult.reply(get_string("com_1"))
     user, rank = await get_uinfo(ult)
     rank = rank or "Admin"
     FullRight = False
