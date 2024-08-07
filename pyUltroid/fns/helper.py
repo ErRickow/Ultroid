@@ -600,7 +600,7 @@ async def restart(ult=None):
 async def shutdown(ult):
     from .. import HOSTED_ON, LOGS
 
-    ult = await eor(ult, "Shutting Down")
+    ult = await event.reply(ult, "Shutting Down")
     if HOSTED_ON == "heroku":
         if not (Var.HEROKU_APP_NAME and Var.HEROKU_API):
             return await ult.edit("Please Fill `HEROKU_APP_NAME` and `HEROKU_API`")
