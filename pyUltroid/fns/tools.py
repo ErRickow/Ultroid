@@ -32,7 +32,7 @@ try:
     from PIL import Image, ImageDraw, ImageFont
 except ImportError:
     Image, ImageDraw, ImageFont = None, None, None
-    LOGS.info("PIL not installed!")
+    LOGS.info("PIL tidak Terinstall!")
 
 from urllib.parse import quote, unquote
 
