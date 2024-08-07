@@ -137,7 +137,7 @@ if run_as_module:
             return await eod(
                 event, f"Please use `{HNDLR}install` as reply to a .py file."
             )
-        ok = await reply(event, "`Installing...`")
+        ok = await event.reply(event, "`Installing...`")
         reply = await event.get_reply_message()
         if not (
             reply.media
