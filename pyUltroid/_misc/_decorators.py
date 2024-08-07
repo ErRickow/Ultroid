@@ -194,7 +194,7 @@ def ultroid_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n",
+                            caption="**ErUbot Client Error:** `Teruskan pesan ini ke` @chakszzz\n\n",
                         )
                 else:
                     error_log = await asst.send_message(
