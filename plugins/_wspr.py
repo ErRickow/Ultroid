@@ -132,7 +132,7 @@ async def _(e):
         elif isinstance(x, types.UserStatusLastWeek):
             status = "Last seen weeks ago"
         else:
-            status = "Can't Tell"
+            status = "Tidak bisa bilang"
         text = f"**Name:**    `{user.first_name}`\n"
         text += f"**Id:**    `{user.id}`\n"
         if user.username:
