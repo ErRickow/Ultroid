@@ -180,7 +180,7 @@ async def kck(ult):
     if user.id in DEVLIST:
         return await xx.reply(get_string("kick_2"))
     if getattr(user, "is_self", False):
-        return await xx.edit(get_string("kick_3"))
+        return await xx.reply(get_string("kick_3"))
     try:
         await ult.client.kick_participant(ult.chat_id, user.id)
     except BadRequestError as er:
