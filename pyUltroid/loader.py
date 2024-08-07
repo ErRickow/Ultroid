@@ -62,7 +62,7 @@ class Loader:
                 modl = func(plugin)
             except ModuleNotFoundError as er:
                 modl = None
-                self._logger.error(f"{plugin}: '{er.name}' not installed!")
+                self._logger.error(f"{plugin}: '{er.name}' Tidak TerInstall!")
                 continue
             except Exception as exc:
                 modl = None
