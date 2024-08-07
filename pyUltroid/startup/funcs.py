@@ -275,7 +275,7 @@ async def autopilot():
         try:
             await ultroid_bot(InviteToChannelRequest(int(channel), [asst.me.username]))
         except BaseException as er:
-            LOGS.info("Error while Adding Assistant to Log Channel")
+            LOGS.info("Error Ketika Menambahkan Asissten")
             LOGS.exception(er)
             assistant = False
     except BaseException as er:
@@ -374,7 +374,7 @@ async def customize():
         await ultroid_bot.send_message("botfather", UL)
         await asyncio.sleep(1)
         await ultroid_bot.send_message(
-            "botfather", f"✨ Hello ✨!! I'm Assistant Bot of {sir}"
+            "botfather", f"✨ Allo ✨!! Gw Assistant Botnya {sir}"
         )
         await asyncio.sleep(2)
         await ultroid_bot.send_message("botfather", "/setdescription")
