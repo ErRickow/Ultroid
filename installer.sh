@@ -189,7 +189,7 @@ dep_install() {
 }
 
 main() {
-    echo -e "Starting Ultroid Setup..."
+    echo -e "Starting ErUbot Setup..."
     if [ -d "pyUltroid" ] && [ -d "resources" ] && [ -d "plugins" ]; then
         DIR=$CURRENT_DIR
     fi
