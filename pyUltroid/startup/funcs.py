@@ -407,7 +407,7 @@ async def plug(plugin_channels):
         os.mkdir("addons")
     if not os.path.exists("addons/__init__.py"):
         with open("addons/__init__.py", "w") as f:
-            f.write("from plugins import *\n\nbot = ultroid_bot")
+            f.write("from plugins import *\n\nbot = eruser_bot")
     LOGS.info("• Loading Plugins from Plugin Channel(s) •")
     for chat in plugin_channels:
         LOGS.info(f"{'•'*4} {chat}")
