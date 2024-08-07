@@ -102,7 +102,7 @@ clone_repo() {
     cd $DIR
     if [ -d $DIR ]; then
         if [ -d $DIR/.git ]; then
-            echo -e "Updating Ultroid ${BRANCH}... "
+            echo -e "Updating ErUbot ${BRANCH}... "
             cd $DIR
             git pull
             currentbranch="$(git rev-parse --abbrev-ref HEAD)"
