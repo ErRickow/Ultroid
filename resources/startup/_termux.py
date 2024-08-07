@@ -111,7 +111,7 @@ def ask_process_info_text():
         exit(0)
     elif strm != "a":
         print("Invalid Input")
-        print("Enter 'A' to Continue or 'E' to exit...")
+        print("Tekan 'A' untuk Lanjut atau 'E' untuk Keluar...")
         ask_process_info_text()
 
 
