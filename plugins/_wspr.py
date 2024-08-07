@@ -112,7 +112,7 @@ async def _(e):
 @in_pattern("msg", owner=True)
 async def _(e):
     zzz = e.text.split(maxsplit=1)
-    desc = "Touch me"
+    desc = "Sentuh ak"
     try:
         query = zzz[1]
         if query.isdigit():
