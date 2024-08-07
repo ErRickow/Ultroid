@@ -43,7 +43,7 @@ IN_BTTS = [
 
 
 def asst_cmd(pattern=None, load=None, owner=False, **kwargs):
-    """Decorator for assistant's command"""
+    """Decorator untuk assistant's command"""
     name = inspect.stack()[1].filename.split("/")[-1].replace(".py", "")
     kwargs["forwards"] = False
 
@@ -77,7 +77,7 @@ def callback(data=None, from_users=[], admins=False, owner=False, **kwargs):
             if admins and not await admin_check(event):
                 return
             if from_users and event.sender_id not in from_users:
-                return await event.answer("Not for You!", alert=True)
+                return await event.answer("Bukan Untuk Lo!", alert=True)
             if owner and event.sender_id not in owner_and_sudos():
                 return await event.answer(f"This is {OWNER}'s bot!!")
             try:
