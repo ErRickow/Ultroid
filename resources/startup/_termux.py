@@ -133,7 +133,7 @@ def ask_process_apt_install():
         print("Menginstall Semua Apt...")
         system(f"apt install {names} -y")
     elif strm != "s":
-        print("Invalid Input\n* Enter Again...")
+        print("Invalid Input\n* Ulangi...")
         ask_process_apt_install()
 
 
