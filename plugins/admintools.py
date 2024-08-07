@@ -185,7 +185,7 @@ async def kck(ult):
         await ult.client.kick_participant(ult.chat_id, user.id)
     except BadRequestError as er:
         LOGS.info(er)
-        return await xx.edit(get_string("kick_1"))
+        return await xx.reply(get_string("kick_1"))
     except Exception as e:
         LOGS.exception(e)
         return
