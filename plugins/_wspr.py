@@ -77,7 +77,7 @@ async def _(e):
         sur = await e.builder.article(
             title="User tidak ditemukan",
             description="Pastikan username/id nya benar.",
-            text="Make sure username or id is correct.",
+            text="Pastikan username atau id sudah bener.",
         )
         return await e.answer([sur])
     try:
