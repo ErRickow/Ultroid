@@ -145,7 +145,7 @@ async def startup_stuff():
             LOGS.debug(er)
         except BaseException:
             LOGS.critical(
-                "Incorrect Timezone ,\nCheck Available Timezone From Here https://graph.org/Ultroid-06-18-2\nSo Time is Default UTC"
+                "Incorrect Timezone ,\n**Contoh**: Asia/jakarta \nSo Time is Default UTC"
             )
             os.environ["TZ"] = "UTC"
             time.tzset()
@@ -198,7 +198,7 @@ async def autobot():
     await ultroid_bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "ultroid_" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "er_" + (str(who.id))[6:] + str(ran) + "_bot"
         await ultroid_bot.send_message(bf, username)
         await asyncio.sleep(1)
         isdone = (await ultroid_bot.get_messages(bf, limit=1))[0].text
