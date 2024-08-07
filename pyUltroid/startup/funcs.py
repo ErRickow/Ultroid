@@ -240,7 +240,7 @@ async def autopilot():
             )
 
         if ultroid_bot._bot:
-            msg_ = "'LOG_CHANNEL' not found! Add it in order to use 'BOTMODE'"
+            msg_ = "'LOG_CHANNEL' tidak ditemukan! Tambahkan jika ingin menggunakan 'BOTMODE'"
             LOGS.error(msg_)
             return await _save(msg_)
         LOGS.info("Creating a Log Channel for You!")
