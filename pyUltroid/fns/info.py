@@ -178,5 +178,5 @@ async def get_chat_info(chat, event):
     if getattr(chat, "verified", None):
         caption += f"✅ <b>Verified by Telegram:</b> <code>Yes</code>\n\n"
     if full.about:
-        caption += f"🗒 <b>Description:</b> \n<code>{full.about}</code>\n"
+        caption += f"🗒 <b>Deskripsi:</b> \n<code>{full.about}</code>\n"
     return chat_photo, caption
