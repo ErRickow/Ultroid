@@ -65,7 +65,7 @@ async def prmte(ult):
             xx, get_string("pro_2").format(inline_mention(user), ult.chat.title, rank)
         )
     except Exception as ex:
-        return await xx.edit(f"`{ex}`")
+        return await xx.reply(f"`{ex}`")
 
 
 @ultroid_cmd(
