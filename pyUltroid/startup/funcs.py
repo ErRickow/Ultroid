@@ -488,7 +488,7 @@ async def ready():
             except Exception as E:
                 LOGS.info("Error while Deleting Previous Update Message :" + str(E))
         if await updater():
-            BTTS = Button.inline("Update Available", "updtavail")
+            BTTS = Button.inline("Update Tersedia", "updtavail")
 
     try:
         spam_sent = await asst.send_message(chat_id, MSG, file=PHOTO, buttons=BTTS)
@@ -519,7 +519,7 @@ async def WasItRestart(udb):
         data = key.split("_")
         who = asst if data[0] == "bot" else ultroid_bot
         await who.edit_message(
-            int(data[1]), int(data[2]), "__Restarted Successfully.__"
+            int(data[1]), int(data[2]), "__Restart Sukses Sayang.__"
         )
     except Exception as er:
         LOGS.exception(er)
