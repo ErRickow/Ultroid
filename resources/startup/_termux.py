@@ -241,7 +241,7 @@ print(f"\n{Fore.RED}#EXTRA Features...\n")
 print(f"{Fore.YELLOW}* Lu Ingin Menginstall Warna ErUbot di Logs ? [Y/N] ")
 inp = input("").strip().lower()
 if inp in ["yes", "y"]:
-    print(f"{Fore.GREEN}*Spoking the Magical Mantras*")
+    print(f"{Fore.GREEN}*Bim Salabim*")
     system("pip install coloredlogs")
 else:
     print("Skipped!")
@@ -251,7 +251,7 @@ if not path.exists(".env"):
     print(with_header("# Do you want to move toward creating .env file ? [y/N] "))
     ask_make_env()
 
-print(with_header(f"\n{Fore.GREEN}You are all Done! 🥳"))
+print(with_header(f"\n{Fore.GREEN}Sudah Selesai Semua! 🥳"))
 sleep(0.2)
 print(f"Use 'bash startup' to try running Ultroid.{Fore.RESET}")
 sleep(0.5)
