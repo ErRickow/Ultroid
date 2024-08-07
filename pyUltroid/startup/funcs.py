@@ -207,7 +207,7 @@ async def autobot():
         udB.set_key("BOT_TOKEN", token)
         await enable_inline(ultroid_bot, username)
         LOGS.info(
-            f"Done. Successfully created @{username} to be used as your assistant bot!"
+            f"Selesai. Suksess Membuat @{username} untuk digunakan sebakai asissten bot!"
         )
     else:
         LOGS.info(
