@@ -154,7 +154,7 @@ async def get_chat_info(chat, event):
     if full.bot_info:
         caption += f"🤖 <b>Bots:</b> <code>{len(full.bot_info)}</code>\n"
     if members_online:
-        caption += f"👀 <b>Currently online:</b> <code>{members_online}</code>\n"
+        caption += f"👀 <b>Sedang Online:</b> <code>{members_online}</code>\n"
     if restricted_users is not None:
         caption += f"🔕 <b>Restricted users:</b> <code>{restricted_users}</code>\n"
     if banned_users:
