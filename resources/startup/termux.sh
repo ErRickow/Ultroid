@@ -12,7 +12,7 @@ then
     pkg install python3 -y
 fi
 
-printf "*Bim salabim...*"
+printf "*bim salabim...*"
 pip install -q colorama
 
 printf "Running up Installation tool.\n"
