@@ -84,7 +84,7 @@ async def _(e):
         desc = zzz[2]
     except IndexError:
         sur = await e.builder.article(
-            title="Type ur msg", text="You Didn't Type Your Msg"
+            title="Tuliskan pesan", text="Lu kga nulis apa apa monyet!"
         )
         return await e.answer([sur])
     button = [
