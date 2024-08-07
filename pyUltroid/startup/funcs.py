@@ -163,7 +163,7 @@ async def autobot():
     if who.username:
         username = who.username + "_bot"
     else:
-        username = "Er_" + (str(who.id))[5:] + "_bot"
+        username = "erubot_" + (str(who.id))[5:] + "_bot"
     bf = "@BotFather"
     await ultroid_bot(UnblockRequest(bf))
     await ultroid_bot.send_message(bf, "/cancel")
@@ -198,7 +198,7 @@ async def autobot():
     await ultroid_bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "er_" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "erubot_" + (str(who.id))[6:] + str(ran) + "_bot"
         await ultroid_bot.send_message(bf, username)
         await asyncio.sleep(1)
         isdone = (await ultroid_bot.get_messages(bf, limit=1))[0].text
