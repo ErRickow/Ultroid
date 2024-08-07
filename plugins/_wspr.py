@@ -159,9 +159,9 @@ async def _(e):
         )
     except IndexError:
         sur = e.builder.article(
-            title="Give Username",
-            description="You Didn't Type Username or id.",
-            text="You Didn't Type Username or id.",
+            title="Berikan Username",
+            description="Lu kaga nulis username/id.",
+            text="LO KGA NULIS USERNAME/IDNYA.",
         )
     except BaseException as er:
         LOGS.exception(er)
