@@ -163,7 +163,7 @@ async def autobot():
     if who.username:
         username = who.username + "_bot"
     else:
-        username = "ultroid_" + (str(who.id))[5:] + "_bot"
+        username = "Er_" + (str(who.id))[5:] + "_bot"
     bf = "@BotFather"
     await ultroid_bot(UnblockRequest(bf))
     await ultroid_bot.send_message(bf, "/cancel")
@@ -173,7 +173,7 @@ async def autobot():
     isdone = (await ultroid_bot.get_messages(bf, limit=1))[0].text
     if isdone.startswith("That I cannot do.") or "20 bots" in isdone:
         LOGS.critical(
-            "Please make a Bot from @BotFather and add it's token in BOT_TOKEN, as an env var and restart me."
+            "Tolong buat bot di @BotFather dan add token BOT_TOKEN, sebagai env var dan restart."
         )
         import sys
 
