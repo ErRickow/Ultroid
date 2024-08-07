@@ -190,8 +190,8 @@ print(
 █       █       █ █   █ █   █  █ █       █   █       █
 █▄▄▄▄▄▄▄█▄▄▄▄▄▄▄█ █▄▄▄█ █▄▄▄█  █▄█▄▄▄▄▄▄▄█▄▄▄█▄▄▄▄▄▄█ 
 {Style.RESET_ALL}
-{Fore.GREEN}- ULTROID Termux Installation -
-  The Main Aim of this script is to deploy Ultroid with basic requirements and save your phone resources.
+{Fore.GREEN}- ErUbot Termux Installation -
+  The Main Aim of this script is to deploy ErUbot with basic requirements and save your phone resources.
 {Fore.RESET}
 
 {COPYRIGHT}
@@ -238,7 +238,7 @@ Enter [ A = Ask for each, I = Install all, S = Skip, E = Exit]"""
 ask_and_wait_opt()
 
 print(f"\n{Fore.RED}#EXTRA Features...\n")
-print(f"{Fore.YELLOW}* Do you want to get Ultroid Logs in Colors? [Y/N] ")
+print(f"{Fore.YELLOW}* Lu Ingin Menginstall Warna ErUbot di Logs ? [Y/N] ")
 inp = input("").strip().lower()
 if inp in ["yes", "y"]:
     print(f"{Fore.GREEN}*Spoking the Magical Mantras*")
