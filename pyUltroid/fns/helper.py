@@ -182,7 +182,7 @@ if run_as_module:
                     x += HNDLR + d + "\n"
                 await eod(ok, f"✓ `Er Userbot - terInstall`: `{plug}` ✓\n\n`{x}`")
             except BaseException:
-                await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓")
+                await eod(ok, f"✓ `Er Userbot - terInstall`: `{plug}` ✓")
 
     async def heroku_logs(event):
         """
