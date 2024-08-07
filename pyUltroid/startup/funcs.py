@@ -211,7 +211,7 @@ async def autobot():
         )
     else:
         LOGS.info(
-            "Please Delete Some Of your Telegram bots at @Botfather or Set Var BOT_TOKEN with token of a bot"
+            "Silahkan hapus beberapa bot di @Botfather atau set BOT_TOKEN dengan token bot"
         )
 
         import sys
