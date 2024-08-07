@@ -157,7 +157,7 @@ async def allcmds(event, telegraph):
         for zz in LIST[z]:
             txt += HNDLR + zz + "\n"
         txt += "\n\n"
-    t = telegraph.create_page(title="Ultroid All Cmds", content=[txt])
+    t = telegraph.create_page(title="ErUbot All Cmds", content=[txt])
     await eor(event, f"All Ultroid Cmds : [Click Here]({t['url']})", link_preview=False)
 
 
