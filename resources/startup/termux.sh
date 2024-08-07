@@ -8,11 +8,11 @@ python_not_installed="$(python -c 'exit()')"
 # Install Python if n0t installed..
 if [ python_not_installed ]
 then
-    printf "Installing Python..\nThis may take some long...\n"
+    printf "Menginstall Python..\nMungkin menguras banyak waktu...\n"
     pkg install python3 -y
 fi
 
-printf "*Putting some magical effect...*"
+printf "*Bim salabim...*"
 pip install -q colorama
 
 printf "Running up Installation tool.\n"
