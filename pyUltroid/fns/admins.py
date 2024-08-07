@@ -118,7 +118,7 @@ async def admin_check(event, require=None, silent: bool = False):
             return False
     if not perms.is_admin:
         if not silent:
-            await event.eor("Only Admins can use this command!", time=8)
+            await event.reply("HANYA ADMIN YANG BISA PAKE JIR!", time=8)
         return
     if require and not getattr(perms, require, False):
         if not silent:
