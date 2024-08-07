@@ -187,7 +187,7 @@ async def autobot():
         isdone = (await ultroid_bot.get_messages(bf, limit=1))[0].text
         if not isdone.startswith("Good."):
             LOGS.critical(
-                "Please make a Bot from @BotFather and add it's token in BOT_TOKEN, as an env var and restart me."
+                "Tolong buat bot di @BotFather dan tambahkan token BOT_TOKEN, sebagai env var dan restart."
             )
             import sys
 
