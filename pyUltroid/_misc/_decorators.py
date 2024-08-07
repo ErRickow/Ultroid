@@ -170,9 +170,9 @@ def ultroid_cmd(
                 ftext += "`\n**Telethon Version:** `" + str(telever)
                 ftext += f"`\n**Hosted At:** `{HOSTED_ON}`\n\n"
                 ftext += "--------START ERUBOT CRASH LOG--------"
-                ftext += "\n**Date:** `" + date
+                ftext += "\n**Tanggal:** `" + date
                 ftext += "`\n**Group:** `" + str(ult.chat_id) + "` " + str(naam)
-                ftext += "\n**Sender ID:** `" + str(ult.sender_id)
+                ftext += "\n**ID Pengirim:** `" + str(ult.sender_id)
                 ftext += "`\n**Replied:** `" + str(ult.is_reply)
                 ftext += "`\n\n**Event Trigger:**`\n"
                 ftext += str(ult.text)
@@ -180,7 +180,7 @@ def ultroid_cmd(
                 ftext += str(format_exc())
                 ftext += "`\n\n**Error text:**`\n"
                 ftext += str(sys.exc_info()[1])
-                ftext += "`\n\n--------END ULTROID CRASH LOG--------"
+                ftext += "`\n\n--------END ERUBOT CRASH LOG--------"
                 ftext += "\n\n\n**Last 5 commits:**`\n"
 
                 stdout, stderr = await bash('git log --pretty=format:"%an: %s" -5')
