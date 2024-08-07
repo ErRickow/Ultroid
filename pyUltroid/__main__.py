@@ -101,7 +101,7 @@ def main():
         pass
 
     LOGS.info(
-        f"Took {time_formatter((time.time() - start_time)*1000)} to start •ULTROID•"
+        f"Sampai {time_formatter((time.time() - start_time)*1000)} Untuk Start •Er Ubot•"
     )
     LOGS.info(suc_msg)
 
