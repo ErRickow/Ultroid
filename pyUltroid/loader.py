@@ -66,11 +66,11 @@ class Loader:
                 continue
             except Exception as exc:
                 modl = None
-                self._logger.error(f"pyUltroid - {self.key} - ERROR - {plugin}")
+                self._logger.error(f"pyUltroid - {self.key} - Error404Jir - {plugin}")
                 self._logger.exception(exc)
                 continue
             if _single and log:
-                self._logger.info(f"Success Load {plugin}!")
+                self._logger.info(f"Sukses Load {plugin}!")
             if callable(after_load):
                 if func == import_module:
                     plugin = plugin.split(".")[-1]
