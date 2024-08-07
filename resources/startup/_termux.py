@@ -43,15 +43,15 @@ APT_PACKAGES = ["ffmpeg", "neofetch", "mediainfo"]
 
 DISCLAIMER_TEXT = ""
 
-COPYRIGHT = f"©️ TeamUltroid {datetime.now().year}"
+COPYRIGHT = f"©️ ErUbot {datetime.now().year}"
 
 HEADER = f"""{Fore.MAGENTA}
-╔╗ ╔╗╔╗  ╔╗            ╔╗
-║║ ║║║║ ╔╝╚╗           ║║
-║║ ║║║║ ╚╗╔╝╔═╗╔══╗╔╗╔═╝║
-║║ ║║║║  ║║ ║╔╝║╔╗║╠╣║╔╗║
-║╚═╝║║╚╗ ║╚╗║║ ║╚╝║║║║╚╝║
-╚═══╝╚═╝ ╚═╝╚╝ ╚══╝╚╝╚══╝\n{Fore.RESET}
+
+
+          ER UBOT √
+   contact ; t.me/chakszzz
+
+\n{Fore.RESET}
 """
 
 INFO_TEXT = f"""
