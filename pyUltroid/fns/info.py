@@ -171,7 +171,7 @@ async def get_chat_info(chat, event):
         caption += f"🎌 <b>Restricted:</b> {chat.restricted}\n"
         rist = chat.restriction_reason[0]
         caption += f"> Platform: {rist.platform}\n"
-        caption += f"> Reason: {rist.reason}\n"
+        caption += f"> Alasan: {rist.reason}\n"
         caption += f"> Text: {rist.text}\n\n"
     if getattr(chat, "scam", None):
         caption += "⚠ <b>Scam:</b> <b>Yes</b>\n"
