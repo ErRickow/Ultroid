@@ -291,7 +291,7 @@ async def pin_message(ult):
         return await ult.Reply("`Reply ke pesan..`", time=6)
     if not match:
         return await ult.eor("`Tolong tambahkan waktu..`", time=8)
-    msg = await ult.eor(get_string("com_1"))
+    msg = await ult.reply(get_string("com_1"))
     msg_id = ult.reply_to_msg_id
     try:
         time = ban_time(match)
