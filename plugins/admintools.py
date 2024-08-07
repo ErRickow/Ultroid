@@ -296,7 +296,7 @@ async def pin_message(ult):
     try:
         time = ban_time(match)
         await ult.client.pin_message(ult.chat_id, msg_id)
-        await msg.eor(f"`pinned for time` `{time}`", time=8)
+        await msg.eor(f"`pinned untuk` `{time}`", time=8)
     except Exception as er:
         return await msg.edit(str(er))
     await asyncio.sleep(time)
