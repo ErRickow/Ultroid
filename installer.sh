@@ -207,7 +207,7 @@ main() {
     (railways_dep)
     (dep_install)
     (misc_install)
-    echo -e "\n\nSetup Completed."
+    echo -e "\n\nSetup Selesai."
 }
 
 if [ $NO_ROOT ]; then
