@@ -28,7 +28,7 @@ RP_BUTTONS = [
     [Button.url("Support Group", "t.me/pamerdong")],
 ]
 
-ULTSTRING = """🎇 **Thanks for Deploying Ultroid Userbot!**
+ULTSTRING = """🎇 **Terima Kasih Sudah Deploy Er UserBot!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
