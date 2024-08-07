@@ -103,7 +103,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                         description="(c) ErUbot",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/dde85d441fa051a0d7d1d.jpg",
+                            "https://telegra.ph/file/f3d4dd6659599e3436494.jpg",
                             0,
                             "image/jpeg",
                             [],
