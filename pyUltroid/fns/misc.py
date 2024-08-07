@@ -389,7 +389,7 @@ class Quotly:
         sender=None,
         file_name="quote.webp",
     ):
-        """Create quotely's quote."""
+        """Membuat Quote..."""
         if not isinstance(event, list):
             event = [event]
         from .. import udB
