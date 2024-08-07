@@ -476,10 +476,10 @@ async def ready():
         MSG = """🎇 **Terima Kasih Sudah Deploy Er Userbot!**
 • Ini, beberapa basic stuff, yang kamu cepat tau, tentang kegunaannya."""
         PHOTO = "https://telegra.ph/file/f3d4dd6659599e3436494.jpg"
-        BTTS = Button.inline("• Click to Start •", "initft_2")
+        BTTS = Button.inline("• Klik untuk Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @TeamUltroid\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Er Userbot sudah terdeploy!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @TeamUltroid\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
