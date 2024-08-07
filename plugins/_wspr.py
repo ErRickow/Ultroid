@@ -69,7 +69,7 @@ async def _(e):
         sur = await e.builder.article(
             title="Kasih Username",
             description="Lu kga tulis username.",
-            text="You Didn't Type Username or id.",
+            text="Lu kaga tulis username/id jir.",
         )
         return await e.answer([sur])
     except ValueError as er:
