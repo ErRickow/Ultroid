@@ -53,7 +53,7 @@ class Loader:
                             files.remove(f"{self.path}/{path}.py")
         if log and not _single:
             self._logger.info(
-                f"• Installing {self.key} Plugins || Count : {len(files)} •"
+                f"• Menginstall {self.key} Plugins || Count : {len(files)} •"
             )
         for plugin in sorted(files):
             if func == import_module:
