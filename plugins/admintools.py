@@ -176,7 +176,7 @@ async def kck(ult):
         return
     user, reason = something
     if not user:
-        return await xx.edit(get_string("adm_1"))
+        return await xx.reply(get_string("adm_1"))
     if user.id in DEVLIST:
         return await xx.reply(get_string("kick_2"))
     if getattr(user, "is_self", False):
