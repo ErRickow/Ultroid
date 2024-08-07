@@ -185,7 +185,7 @@ async def _(e):
         if e.sender_id in buddhhu[ids]:
             await e.answer(buddhhu[ids][-1], alert=True)
         else:
-            await e.answer("Not For You", alert=True)
+            await e.answer("Sok Asik! Bukan Buat Lo", alert=True)
     else:
         await e.answer(get_string("wspr_2"), alert=True)
 
