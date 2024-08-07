@@ -145,10 +145,10 @@ def ask_and_wait_opt():
     elif strm == "a":
         for opt in OPT_PACKAGES.keys():
             print(
-                f"* {Fore.YELLOW}Do you want to install '{opt}'? [Y/N]\n- {OPT_PACKAGES[opt]}"
+                f"* {Fore.YELLOW}Lu Ingin Install '{opt}'? [Y/N]\n- {OPT_PACKAGES[opt]}"
             )
             if yes_no_apt():
-                print(f"Installing {opt}...")
+                print(f"Sedang Menginstall {opt}...")
                 system(f"pip install {opt}")
             else:
                 print(f"{Fore.YELLOW}- Discarded {opt}.\n")
