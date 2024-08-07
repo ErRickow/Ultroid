@@ -554,7 +554,7 @@ async def progress(current, total, event, start, type_of_ps, file_name=None):
         )
         if file_name:
             await event.edit(
-                "`✦ {}`\n\n`File Name: {}`\n\n{}".format(type_of_ps, file_name, tmp)
+                "`✦ {}`\n\n`File Nama: {}`\n\n{}".format(type_of_ps, file_name, tmp)
             )
         else:
             await event.edit("`✦ {}`\n\n{}".format(type_of_ps, tmp))
