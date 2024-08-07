@@ -30,7 +30,7 @@ RP_BUTTONS = [
 
 ULTSTRING = """🎇 **Terima Kasih Sudah Deploy Er UserBot!**
 
-• Here, are the Some Basic stuff from, where you can Know, about its Usage."""
+• Ini dia beberapa basic stuff, yang mudah lu pahami tentang kegunaannya."""
 
 
 @ultroid_cmd(
