@@ -420,7 +420,7 @@ async def djshsh(event):
     pattern="listpinned$",
 )
 async def get_all_pinned(event):
-    x = await event.eor(get_string("com_1"))
+    x = await event.reply(get_string("com_1"))
     chat_id = (str(event.chat_id)).replace("-100", "")
     chat_name = get_display_name(event.chat)
     a = ""
@@ -444,7 +444,7 @@ async def get_all_pinned(event):
     if not a:
         return await eor(x, get_string("listpin_1"), time=5)
 
-    await x.edit(m + a, parse_mode="html")
+    await x.reply(m + a, parse_mode="html")
 
 
 @ultroid_cmd(
