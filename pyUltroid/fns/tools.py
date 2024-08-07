@@ -646,7 +646,7 @@ async def get_stored_file(event, hash):
         return
     if not msg_id:
         return await asst.send_message(
-            event.chat_id, "__Message was deleted by owner!__", reply_to=event.id
+            event.chat_id, "__Pesan Telah Dihapus Oleh Owner!__", reply_to=event.id
         )
     await asst.send_message(event.chat_id, msg.text, file=msg.media, reply_to=event.id)
 
