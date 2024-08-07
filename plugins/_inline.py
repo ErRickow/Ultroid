@@ -250,7 +250,7 @@ async def _(event):
         )
         remove("ultroid_updates.txt")
     else:
-        await event.edit(
+        await event.reply(
             changelog_str,
             buttons=[
                 [Button.inline("Update Now", data="updatenow")],
