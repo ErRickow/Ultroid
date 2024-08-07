@@ -169,7 +169,7 @@ def ultroid_cmd(
                 ftext += "`\n**Er UserBot Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
                 ftext += f"`\n**Hosted At:** `{HOSTED_ON}`\n\n"
-                ftext += "--------START ULTROID CRASH LOG--------"
+                ftext += "--------START ERUBOT CRASH LOG--------"
                 ftext += "\n**Date:** `" + date
                 ftext += "`\n**Group:** `" + str(ult.chat_id) + "` " + str(naam)
                 ftext += "\n**Sender ID:** `" + str(ult.sender_id)
