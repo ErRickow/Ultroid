@@ -74,7 +74,7 @@ INFO_TEXT = f"""
     -    autopic        -     nightmode
     -    blacklist      -     forcesubscribe
 
-4. You can't use 'VCBOT' on Termux.
+4. Lu Gabisa Pake 'VCBOT' di Termux.
 
 5. You can't use 'MongoDB' on Termux (Android).
 {Fore.RESET}
