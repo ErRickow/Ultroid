@@ -260,7 +260,7 @@ async def autopilot():
         except BaseException as er:
             LOGS.exception(er)
             LOGS.info(
-                "Something Went Wrong , Create A Group and set its id on config var LOG_CHANNEL."
+                "eror ketika , membuat group dan set idnya config var LOG_CHANNEL."
             )
 
             return await _save(str(er))
