@@ -254,7 +254,7 @@ async def autopilot():
             )
         except ChannelsTooMuchError as er:
             LOGS.critical(
-                "You Are in Too Many Channels & Groups , Leave some And Restart The Bot"
+                "Lu terlalu banyak group dan channel , Keluarkan beberapa dan restart botnya"
             )
             return await _save(str(er))
         except BaseException as er:
