@@ -218,16 +218,16 @@ async def get_random_user_data():
     loc = data_["location"]
     dob = data_["dob"]
     msg = """
-{} **Name:** {}.{} {}
-**Street:** {} {}
-**City:** {}
-**State:** {}
-**Country:** {}
-**Postal Code:** {}
+{} **Nama:** {}.{} {}
+**Jalan:** {} {}
+**Kota:** {}
+**Daerah:** {}
+**Negara:** {}
+**Kode Pos:** {}
 **Email:** {}
-**Phone:** {}
+**Telephon:** {}
 **Card:** {}
-**Birthday:** {}
+**Tanggal Lahir:** {}
 """.format(
         gender,
         name["title"],
