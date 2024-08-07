@@ -79,14 +79,14 @@ INFO_TEXT = f"""
 5. Lu gabisa pake 'MongoDB' di Termux (Android).
 {Fore.RESET}
 * Gw harap lu pinter lah y.
-* Tekan 'A' untuk lanjut, 'E' untuk Keluar..\n
+* Tekan 'A' untuk Lanjut, 'E' untuk Keluar..\n
 """
 
 
 def ask_and_wait(text, header: bool = False):
     if header:
         text = with_header(text)
-    print(text + "\nPress 'ANY Key' to Continue or 'Ctrl+C' to exit...\n")
+    print(text + "\nPencet 'Key Apapun' untuk Lanjut atau 'Ctrl+C' untuk Keluar...\n")
     input("")
 
 
