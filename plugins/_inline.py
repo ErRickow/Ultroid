@@ -428,7 +428,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Ultroid Op", text=txt, link_preview=False, buttons=btn)
+        await builder.article("ErUbot Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
