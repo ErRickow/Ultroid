@@ -178,12 +178,12 @@ async def forw(event):
     allow_sudo=False,
 )
 async def sending(event):
-    x = await event.eor(get_string("com_1"))
+    x = await event.reply(get_string("com_1"))
     if not event.is_reply:
-        return await x.edit(get_string("ex_1"))
+        return await x.reply(get_string("ex_1"))
     channels = KeyM.get()
     if not channels:
-        return await x.edit(f"Please add channels by using `{HNDLR}add` in them.")
+        return await x.edit(f"Tolong tambahkan channels dengan `{HNDLR}add` begitu.")
     await x.edit("Sending....")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
