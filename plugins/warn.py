@@ -177,4 +177,4 @@ async def warnset(e):
         udB.set_key("SETWARN", f"{number} {action}")
         await e.reply(f"Selesai, Warn Lo sekarang {number} dan Aksi Lo {action}")
     else:
-        await e.eor(get_string("schdl_2"), time=5)
+        await e.reply(get_string("schdl_2"), time=5)
