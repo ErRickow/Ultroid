@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 """
-✘ Commands Available
+✘ Bantuan Warn
 
 •`{i}warn <reply to user> <reason>`
     Gives Warn.
