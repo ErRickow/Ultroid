@@ -53,7 +53,7 @@ if HOSTED_ON == "heroku":
 
 @ultroid_cmd(pattern="usage")
 async def usage_finder(event):
-    x = await event.eor(get_string("com_1"))
+    x = await event.reply(get_string("com_1"))
     try:
         opt = event.text.split(" ", maxsplit=1)[1]
     except IndexError:
