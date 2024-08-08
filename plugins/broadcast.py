@@ -121,7 +121,7 @@ async def list_all(event):
         with io.BytesIO(str.encode(MSG)) as out_file:
             out_file.name = "channels.txt"
             await event.reply(
-                "Channels in Database",
+                "Channel di database",
                 file=out_file,
                 force_document=True,
                 allow_cache=False,
