@@ -188,7 +188,7 @@ async def sending(event):
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         if previous_message.poll:
-            return await x.edit(f"Reply `{HNDLR}forward` for polls.")
+            return await x.reply(f"Reply `{HNDLR}forward` for polls.")
         if previous_message:
             error_count = 0
             sent_count = 0
