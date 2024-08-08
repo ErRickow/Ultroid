@@ -166,14 +166,14 @@ async def twarns(e):
 async def warnset(e):
     ok = e.pattern_match.group(1).strip()
     if not ok:
-        return await e.reply("nganu")
+        return await e.reply("stuff")
     if "|" in ok:
         try:
             number, action = int(ok.split()[0]), ok.split()[1]
         except BaseException:
             return await e.eor(get_string("schdl_2"), time=5)
         if ("ban" or "kick" or "mute") not in action:
-            return await e.eor("`Only mute / ban / kick option suported`", time=5)
+            return await e.eor("`Hanya mute / ban / kick opsi yang tersedia jir`", time=5)
         udB.set_key("SETWARN", f"{number} {action}")
         await e.eor(f"Done Your Warn Count is now {number} and Action is {action}")
     else:
