@@ -68,7 +68,7 @@ async def broadcast_adder(event):
     if chat_id == udB.get_key("LOG_CHANNEL"):
         return
     if KeyM.contains(chat_id):
-        await x.edit(get_string("bd_6"))
+        await x.reply(get_string("bd_6"))
     elif xx := KeyM.add(chat_id):
         await x.edit(get_string("bd_5"))
     else:
