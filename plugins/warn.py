@@ -89,10 +89,10 @@ async def warn(e):
         ok = await ultroid_bot.get_entity(user)
         user = inline_mention(ok)
         r = r.split("|$|")
-        text = f"User {user} Telah {action} ya Karena {count+1} Peringatan.\n\n"
+        text = f"User {user} Telah {action} Anu {count+1} Peringatan.\n\n"
         for x in range(c):
             text += f"•**{x+1}.** {r[x]}\n"
-        await e.eor(text)
+        await e.reply(text)
         return reset_warn(e.chat_id, ok.id)
     add_warn(e.chat_id, user, count + 1, r)
     ok = await ultroid_bot.get_entity(user)
