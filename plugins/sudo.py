@@ -95,7 +95,7 @@ async def _(ult):
         key = sudoers()
         key.remove(id)
         udB.set_key("SUDOS", key)
-        mmm = f"**Removed** {name} **from SUDO User(s)**"
+        mmm = f"**Dihapus** {name} **dari SUDO List(s)**"
     await ult.eor(mmm, time=5)
 
 
