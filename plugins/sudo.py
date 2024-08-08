@@ -87,7 +87,7 @@ async def _(ult):
         id = ult.chat_id
         name = await ult.get_chat()
     else:
-        return await ult.eor(get_string("sudo_1"), time=5)
+        return await ult.reply(get_string("sudo_1"), time=5)
     name = inline_mention(name) if name else f"`{id}`"
     if id not in sudoers():
         mmm = f"{name} `wasn't a SUDO User ...`"
