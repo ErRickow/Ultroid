@@ -41,7 +41,7 @@ from . import async_searcher, get_random_user_data, get_string, re, ultroid_cmd
 
 @ultroid_cmd(pattern="eod$")
 async def diela(e):
-    m = await e.eor(get_string("com_1"))
+    m = await e.reply(get_string("com_1"))
     li = "https://daysoftheyear.com"
     te = "🎊 **Events of the Day**\n\n"
     da = dt.now()
