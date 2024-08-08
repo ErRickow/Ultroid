@@ -186,7 +186,7 @@ async def _(event):
     x = event.eor("pong!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await event.reply(get_string(end, "ping").format(end, uptime))
+    await event.reply(get_string(end, "ping").format(end, uptime).format{owner})
 
 
 @ultroid_cmd(
