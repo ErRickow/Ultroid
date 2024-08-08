@@ -103,7 +103,7 @@ async def _(event):
         await event.reply(output_str)
     except Exception as exc:
         LOGS.exception(exc)
-        await event.eor(str(exc), time=5)
+        await event.reply(str(exc), time=5)
 
 
 @ultroid_cmd(
@@ -118,7 +118,7 @@ async def _(event):
             ids = await event.client.parse_id(match)
         except Exception as er:
             return await event.eor(str(er))
-        return await event.eor(
+        return await event.reply(
             f"**Chat ID:**  `{event.chat_id}`\n**User ID:**  `{ids}`"
         )
     data = f"**Current Chat ID:**  `{event.chat_id}`"
@@ -129,7 +129,7 @@ async def _(event):
         bot_api_file_id = event.file.id
         data += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
     data += f"\n**Msg ID:**  `{event.id}`"
-    await ult.eor(data)
+    await ult.reply(data)
 
 
 @ultroid_cmd(pattern="bots( (.*)|$)", groups_only=True, manager=True)
