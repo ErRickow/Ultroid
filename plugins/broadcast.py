@@ -137,12 +137,12 @@ async def list_all(event):
 )
 async def forw(event):
     if not event.is_reply:
-        return await event.eor(get_string("ex_1"))
+        return await event.reply(get_string("ex_1"))
     ultroid_bot = event.client
     channels = KeyM.get()
-    x = await event.eor("Sending...")
+    x = await event.reply("Sending...")
     if not channels:
-        return await x.edit(f"Please add channels by using `{HNDLR}add` in them.")
+        return await x.reply(f"Please add channels by using `{HNDLR}add` in them.")
     error_count = 0
     sent_count = 0
     previous_message = await event.get_reply_message()
