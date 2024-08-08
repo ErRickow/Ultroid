@@ -154,7 +154,7 @@ async def twarns(e):
         ok = await e.client.get_entity(user)
         user = inline_mention(ok)
         r = r.split("|$|")
-        text = f"User {user} Got {c} Warns.\n\n"
+        text = f"User {user} Mendapat {c} Warns.\n\n"
         for x in range(c):
             text += f"•**{x+1}.** {r[x]}\n"
         await e.eor(text)
