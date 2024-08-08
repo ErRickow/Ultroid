@@ -83,7 +83,7 @@ async def warn(e):
                     e.chat_id, user, until_date=None, send_messages=False
                 )
             except BaseException:
-                return await e.eor("`Something Went Wrong.`", time=5)
+                return await e.eor("`Ada Something yang salah ew...`", time=5)
         add_warn(e.chat_id, user, count + 1, r)
         c, r = warns(e.chat_id, user)
         ok = await ultroid_bot.get_entity(user)
