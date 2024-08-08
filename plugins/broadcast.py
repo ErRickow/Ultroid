@@ -196,7 +196,7 @@ async def sending(event):
                 try:
                     await ultroid_bot.send_message(channel, previous_message)
                     sent_count += 1
-                    await x.edit(
+                    await x.reply(
                         f"Sent : {sent_count}\nError : {error_count}\nTotal : {len(channels)}",
                     )
                 except Exception as error:
