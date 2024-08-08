@@ -96,7 +96,7 @@ async def _(ult):
         key.remove(id)
         udB.set_key("SUDOS", key)
         mmm = f"**Dihapus** {name} **dari SUDO List(s)**"
-    await ult.eor(mmm, time=5)
+    await ult.reply(mmm, time=5)
 
 
 @ultroid_cmd(
@@ -105,7 +105,7 @@ async def _(ult):
 async def _(ult):
     sudos = sudoers()
     if not sudos:
-        return await ult.eor(get_string("sudo_3"), time=5)
+        return await ult.reply(get_string("sudo_3"), time=5)
     msg = ""
     for i in sudos:
         try:
@@ -120,5 +120,5 @@ async def _(ult):
     if not m:
         m = "[False](https://graph.org/Ultroid-04-06)"
     return await ult.eor(
-        f"**SUDO MODE : {m}\n\nList of SUDO Users :**\n{msg}", link_preview=False
+        f"**SUDO MODE : {m}\n\nList of SUDO List :**\n{msg}", link_preview=False
     )
