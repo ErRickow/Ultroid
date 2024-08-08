@@ -729,12 +729,12 @@ async def gstat_(e):
 
 @ultroid_cmd(pattern="gblacklist$")
 async def blacklist_(event):
-    await gblacker(event, "add")
+    await gblacker(event, "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ")
 
 
 @ultroid_cmd(pattern="ungblacklist$")
 async def ungblacker(event):
-    await gblacker(event, "remove")
+    await gblacker(event, "ʙᴇʙᴀꜱ")
 
 
 async def gblacker(event, type_):
@@ -746,8 +746,8 @@ async def gblacker(event, type_):
             return await event.eor(f"**ERROR**\n`{str(e)}`")
     except IndexError:
         chat_id = event.chat_id
-    if type_ == "add":
+    if type_ == "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ":
         keym.add(chat_id)
-    elif type_ == "remove":
+    elif type_ == "ʙᴇʙᴀꜱ":
         keym.remove(chat_id)
-    await event.eor(f"Global Broadcasts: \n{type_}ed {chat_id}")
+    await event.reply(f"​❍➥🇬​​🇷​​🇺​​🇵​ ​🇮​​🇳​​🇮​❖⠇{chat_id}⠇\n❍➥ᴛᴇʟᴀʜ {type_} ᴅᴀʟᴀᴍ ​\n𝄃𝄃🇸​​🇭​​🇦​​🇩​​🇴​​🇼​\n ​🇷​​🇪​​🇦​​🇱​​🇲​𝄃𝄃")
