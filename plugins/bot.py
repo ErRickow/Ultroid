@@ -330,7 +330,7 @@ async def _(e):
             buttons=Button.inline("Changelogs", data="changes"),
         )
         Link = x.message_link
-        await xx.edit(
+        await xx.reply(
             f'<strong><a href="{Link}">[ChangeLogs]</a></strong>',
             parse_mode="html",
             link_preview=False,
