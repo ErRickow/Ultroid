@@ -151,8 +151,8 @@ async def forw(event):
         try:
             await ultroid_bot.forward_messages(channel, previous_message)
             sent_count += 1
-            await x.edit(
-                f"Sent : {sent_count}\nError : {error_count}\nTotal : {len(channels)}",
+            await x.reply(
+                f"Kirim : {sent_count}\nError : {error_count}\nTotal : {len(channels)}",
             )
         except Exception:
             try:
