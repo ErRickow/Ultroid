@@ -148,7 +148,7 @@ async def twarns(e):
             else:
                 user = int(user)
         except BaseException:
-            return await e.eor("Reply To A User", time=5)
+            return await e.reply("Reply ke user", time=5)
     c, r = warns(e.chat_id, user)
     if c and r:
         ok = await e.client.get_entity(user)
