@@ -28,9 +28,9 @@ KeyM = KeyManager("BROADCAST", cast=list)
 )
 async def broadcast_adder(event):
     msgg = event.pattern_match.group(1).strip()
-    x = await event.eor(get_string("bd_1"))
+    x = await event.reply(get_string("bd_1"))
     if msgg == "all":
-        await x.edit(get_string("bd_2"))
+        await x.reply(get_string("bd_2"))
         chats = [
             e.entity
             for e in await event.client.get_dialogs()
