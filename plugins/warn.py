@@ -89,7 +89,7 @@ async def warn(e):
         ok = await ultroid_bot.get_entity(user)
         user = inline_mention(ok)
         r = r.split("|$|")
-        text = f"User {user} Got {action} Due to {count+1} Warns.\n\n"
+        text = f"User {user} Telah {action} ya Karena {count+1} Peringatan.\n\n"
         for x in range(c):
             text += f"•**{x+1}.** {r[x]}\n"
         await e.eor(text)
