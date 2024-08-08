@@ -173,8 +173,8 @@ async def warnset(e):
         except BaseException:
             return await e.eor(get_string("schdl_2"), time=5)
         if ("ban" or "kick" or "mute") not in action:
-            return await e.eor("`Hanya mute / ban / kick opsi yang tersedia jir`", time=5)
+            return await e.reply("`Hanya mute / ban / kick opsi yang tersedia jir`", time=5)
         udB.set_key("SETWARN", f"{number} {action}")
-        await e.eor(f"Done Your Warn Count is now {number} and Action is {action}")
+        await e.reply(f"Selesai, Warn kamu sekarang {number} dan Aksi Lo {action}")
     else:
         await e.eor(get_string("schdl_2"), time=5)
