@@ -116,7 +116,7 @@ async def _help(ult):
             cmd = len(z) + 10
             if udB.get_key("MANAGER") and udB.get_key("DUAL_HNDLR") == "/":
                 _main_help_menu[2:3] = [[Button.inline("• Manager Help •", "mngbtn")]]
-            return await ult.reply(
+            return await ult.eor(
                 get_string("inline_4").format(
                     OWNER_NAME,
                     len(HELP["Official"]),
