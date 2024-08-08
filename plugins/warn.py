@@ -97,7 +97,7 @@ async def warn(e):
     add_warn(e.chat_id, user, count + 1, r)
     ok = await ultroid_bot.get_entity(user)
     user = inline_mention(ok)
-    await eor(
+    await message.reply(
         e,
         f"**PRITT!!! :** {count+1}/{number}\n**Untuk :**{user}\n**Hati Hati !!!**\n\n**Karena** : {reason}",
     )
