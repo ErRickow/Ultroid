@@ -185,7 +185,8 @@ async def _(event):
     start = time.time()
     end = round((time.time() - start) * 10000000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await event.reply(get_string("ping").format(end, uptime))
+    owner = OWNER_NAME
+    await event.reply(get_string("ping").format(end, uptime, owner))
 
 
 @ultroid_cmd(
