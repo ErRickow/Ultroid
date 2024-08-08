@@ -136,7 +136,7 @@ async def bban(ult):
     fullsudo=True,
 )
 async def uunban(ult):
-    xx = await ult.eor(get_string("com_1"))
+    xx = await ult.reply(get_string("com_1"))
     if ult.text[1:].startswith("unbanall"):
         return
     something = await get_uinfo(ult)
@@ -150,7 +150,7 @@ async def uunban(ult):
     except UserIdInvalidError:
         return await eod(ult, get_string("adm_1"))
     except BadRequestError:
-        return await xx.edit(get_string("adm_2"))
+        return await xx.reply(get_string("adm_2"))
     sender = inline_mention(await ult.get_sender())
     text = get_string("unban_3").format(inline_mention(user), sender, ult.chat.title)
     if reason:
