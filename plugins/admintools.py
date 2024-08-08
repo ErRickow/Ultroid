@@ -76,7 +76,7 @@ async def prmte(ult):
     fullsudo=True,
 )
 async def dmote(ult):
-    xx = await ult.eor(get_string("com_1"))
+    xx = await ult.reply(get_string("com_1"))
     user, rank = await get_uinfo(ult)
     if not rank:
         rank = "Not Admin"
@@ -95,7 +95,7 @@ async def dmote(ult):
         )
         await eod(xx, get_string("de_2").format(inline_mention(user), ult.chat.title))
     except Exception as ex:
-        return await xx.edit(f"`{ex}`")
+        return await xx.reply(f"`{ex}`")
 
 
 @ultroid_cmd(
