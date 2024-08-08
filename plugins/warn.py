@@ -166,7 +166,7 @@ async def twarns(e):
 async def warnset(e):
     ok = e.pattern_match.group(1).strip()
     if not ok:
-        return await e.eor("stuff")
+        return await e.reply("nganu")
     if "|" in ok:
         try:
             number, action = int(ok.split()[0]), ok.split()[1]
