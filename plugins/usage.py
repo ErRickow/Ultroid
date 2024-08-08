@@ -60,12 +60,12 @@ async def usage_finder(event):
         return await x.edit(simple_usage())
 
     if opt == "db":
-        await x.edit(db_usage())
+        await x.reply(db_usage())
     elif opt == "heroku":
         is_hk, hk = await heroku_usage()
         await x.edit(hk)
     else:
-        await x.edit(await get_full_usage())
+        await x.reply(await get_full_usage())
 
 
 def simple_usage():
