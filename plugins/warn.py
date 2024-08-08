@@ -52,7 +52,7 @@ async def warn(e):
             else:
                 user = int(user)
         except BaseException:
-            return await e.eor("Reply To A User", time=5)
+            return await e.reply("Reply ke user", time=5)
         try:
             reason = e.text.split(maxsplit=2)[-1]
         except BaseException:
