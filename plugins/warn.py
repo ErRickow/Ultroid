@@ -71,7 +71,7 @@ async def warn(e):
             try:
                 await ultroid_bot.edit_permissions(e.chat_id, user, view_messages=False)
             except BaseException:
-                return await e.eor("`Something Went Wrong.`", time=5)
+                return await e.reply("`Ada Something yang salah ew...`", time=5)
         elif "kick" in action:
             try:
                 await ultroid_bot.kick_participant(e.chat_id, user)
