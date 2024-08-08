@@ -163,7 +163,7 @@ async def forw(event):
             except Exception as Em:
                 LOGS.info(Em)
             error_count += 1
-            await x.edit(
+            await x.reply(
                 f"Sent : {sent_count}\nError : {error_count}\nTotal : {len(channels)}",
             )
     await x.edit(f"{sent_count} messages sent with {error_count} errors.")
