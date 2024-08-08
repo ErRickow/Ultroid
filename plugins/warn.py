@@ -122,7 +122,7 @@ async def rwarn(e):
             else:
                 user = int(user)
         except BaseException:
-            return await e.eor("Reply To user")
+            return await e.reply("Reply ke user")
     reset_warn(e.chat_id, user)
     ok = await e.client.get_entity(user)
     user = inline_mention(ok)
