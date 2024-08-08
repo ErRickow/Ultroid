@@ -102,11 +102,11 @@ async def broadcast_remover(event):
     pattern="listchannels$",
 )
 async def list_all(event):
-    x = await event.eor(get_string("com_1"))
+    x = await event.reply(get_string("com_1"))
     channels = KeyM.get()
     num = KeyM.count()
     if not channels:
-        return await eor(x, "No chats were added.", time=5)
+        return await eor(x, "Tidak ada chat yang di tambahkan.", time=5)
     msg = "Channels in database:\n"
     for channel in channels:
         name = ""
