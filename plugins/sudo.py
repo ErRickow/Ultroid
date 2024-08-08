@@ -54,7 +54,7 @@ async def _(ult):
     if id == ultroid_bot.uid:
         mmm = get_string("sudo_2")
     elif id in sudoers():
-        mmm = f"{name} `is already a SUDO User ...`"
+        mmm = f"{name} `sudah di SUDO ...`"
     else:
         udB.set_key("SUDO", "True")
         key = sudoers()
