@@ -309,7 +309,7 @@ async def inline_alive(ult):
 
 @ultroid_cmd(pattern="update( (.*)|$)")
 async def _(e):
-    xx = await e.eor(get_string("upd_1"))
+    xx = await e.reply(get_string("upd_1"))
     if e.pattern_match.group(1).strip() and (
         "fast" in e.pattern_match.group(1).strip()
         or "soft" in e.pattern_match.group(1).strip()
