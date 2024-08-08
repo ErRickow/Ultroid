@@ -157,9 +157,9 @@ async def twarns(e):
         text = f"User {user} Mendapat {c} Warns.\n\n"
         for x in range(c):
             text += f"•**{x+1}.** {r[x]}\n"
-        await e.eor(text)
+        await e.reply(text)
     else:
-        await e.eor("`No Warnings`")
+        await e.reply("`Ga Ada Warns`")
 
 
 @ultroid_cmd(pattern="setwarn( (.*)|$)", manager=True)
