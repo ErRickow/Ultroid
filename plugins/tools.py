@@ -99,8 +99,8 @@ async def _(event):
     lan = input or "en"
     try:
         tt = translate(text, lang_tgt=lan)
-        output_str = f"**TRANSLATED** to {lan}\n{tt}"
-        await event.eor(output_str)
+        output_str = f"**DI TRANSLET** ke {lan}\n{tt}"
+        await event.reply(output_str)
     except Exception as exc:
         LOGS.exception(exc)
         await event.eor(str(exc), time=5)
