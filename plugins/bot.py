@@ -203,7 +203,7 @@ heroku_api = Var.HEROKU_API
     fullsudo=True,
 )
 async def restartbt(ult):
-    ok = await ult.eor(get_string("bot_5"))
+    ok = await ult.reply(get_string("bot_5"))
     call_back()
     who = "bot" if ult.client._bot else "user"
     udB.set_key("_RESTART", f"{who}_{ult.chat_id}_{ok.id}")
