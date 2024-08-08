@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 """
-✘ Commands Available -
+✘ Bantuan Sudo -
 
 • `{i}addsudo`
     Add Sudo Users by replying to user or using <space> separated userid(s)
