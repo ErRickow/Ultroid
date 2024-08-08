@@ -222,7 +222,7 @@ async def uptd_plugin(event):
     except Exception as er:
         LOGS.exception(er)
         help = f"Do `{HNDLR}help {key}` to get list of commands."
-        await event.reply(help, buttons=buttons)
+        await event.eor(help, buttons=buttons)
 
 
 @callback(data="doupdate", owner=True)
