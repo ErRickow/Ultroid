@@ -727,12 +727,12 @@ async def gstat_(e):
     await xx.edit(msg)
 
 
-@ultroid_cmd(pattern="gblacklist$")
+@ultroid_cmd(pattern="gbl$")
 async def blacklist_(event):
     await gblacker(event, "ᴅɪᴍᴀꜱᴜᴋᴋᴀɴ")
 
 
-@ultroid_cmd(pattern="ungblacklist$")
+@ultroid_cmd(pattern="unbl$")
 async def ungblacker(event):
     await gblacker(event, "ʙᴇʙᴀꜱ")
 
