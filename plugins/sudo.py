@@ -60,7 +60,7 @@ async def _(ult):
         key = sudoers()
         key.append(id)
         udB.set_key("SUDOS", key)
-        mmm = f"**Added** {name} **as SUDO User**"
+        mmm = f"**Ditambahkan** {name} **sebagai SUDO**"
     await ult.eor(mmm, time=5)
 
 
