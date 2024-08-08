@@ -126,7 +126,7 @@ async def rwarn(e):
     reset_warn(e.chat_id, user)
     ok = await e.client.get_entity(user)
     user = inline_mention(ok)
-    await e.eor(f"Menghapus semua warn {user}.")
+    await e.reply(f"Menghapus semua warn {user}.")
 
 
 @ultroid_cmd(
