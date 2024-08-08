@@ -119,6 +119,6 @@ async def _(ult):
     m = udB.get_key("SUDO") or True
     if not m:
         m = "[False](https://graph.org/Ultroid-04-06)"
-    return await ult.eor(
+    return await ult.reply(
         f"**SUDO MODE : {m}\n\nList of SUDO List :**\n{msg}", link_preview=False
     )
