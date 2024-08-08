@@ -56,7 +56,7 @@ async def warn(e):
         try:
             reason = e.text.split(maxsplit=2)[-1]
         except BaseException:
-            reason = "unknown"
+            reason = "gtw"
     count, r = warns(e.chat_id, user)
     r = f"{r}|$|{reason}" if r else reason
     try:
