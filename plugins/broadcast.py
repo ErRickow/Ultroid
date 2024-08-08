@@ -87,13 +87,13 @@ async def broadcast_remover(event):
     if chat_id == "all":
         await x.edit(get_string("bd_8"))
         udB.del_key("BROADCAST")
-        await x.edit("Database cleared.")
+        await x.reply("Database cleared.")
         return
     if KeyM.contains(chat_id):
         KeyM.remove(chat_id)
-        await x.edit(get_string("bd_7"))
+        await x.reply(get_string("bd_7"))
     else:
-        await x.edit(get_string("bd_9"))
+        await x.reply(get_string("bd_9"))
     await asyncio.sleep(3)
     await x.delete()
 
