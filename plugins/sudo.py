@@ -61,7 +61,7 @@ async def _(ult):
         key.append(id)
         udB.set_key("SUDOS", key)
         mmm = f"**Ditambahkan** {name} **sebagai SUDO**"
-    await ult.eor(mmm, time=5)
+    await ult.reply(mmm, time=5)
 
 
 @ultroid_cmd(pattern="delsudo( (.*)|$)", fullsudo=True)
