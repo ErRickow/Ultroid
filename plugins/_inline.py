@@ -218,7 +218,7 @@ async def uptd_plugin(event):
         ]
     )
     try:
-        await event.reply(help_, buttons=buttons)
+        await event.edit(help_, buttons=buttons)
     except Exception as er:
         LOGS.exception(er)
         help = f"Do `{HNDLR}help {key}` to get list of commands."
