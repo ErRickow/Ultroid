@@ -47,9 +47,9 @@ async def _(ult):
         id = ult.chat_id
         name = await ult.get_chat()
     else:
-        return await ult.eor(get_string("sudo_1"), time=5)
+        return await ult.reply(get_string("sudo_1"), time=5)
     if name and isinstance(name, User) and (name.bot or name.verified):
-        return await ult.eor(get_string("sudo_4"))
+        return await ult.reply(get_string("sudo_4"))
     name = inline_mention(name) if name else f"`{id}`"
     if id == ultroid_bot.uid:
         mmm = get_string("sudo_2")
