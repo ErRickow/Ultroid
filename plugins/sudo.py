@@ -49,7 +49,7 @@ async def _(ult):
     else:
         return await ult.reply(get_string("sudo_1"), time=5)
     if name and isinstance(name, User) and (name.bot or name.verified):
-        return await ult.reply(get_string("sudo_4"))
+        return await ult.eor(get_string("sudo_4"))
     name = inline_mention(name) if name else f"`{id}`"
     if id == ultroid_bot.uid:
         mmm = get_string("sudo_2")
@@ -105,7 +105,7 @@ async def _(ult):
 async def _(ult):
     sudos = sudoers()
     if not sudos:
-        return await ult.reply(get_string("sudo_3"), time=5)
+        return await ult.eor(get_string("sudo_3"), time=5)
     msg = ""
     for i in sudos:
         try:
