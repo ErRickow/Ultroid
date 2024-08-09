@@ -20,9 +20,9 @@ from . import *
 
 @ultroid_cmd(pattern="adzan")
 async def cek(event):
-    LOKASI = ult.pattern_match.group(1).strip():
-    if not LOKASI:
-        await event.eor("<i>Silahkan Masukkan Nama Kota Anda</i>")
+    lokasi = event.pattern_match.group(1).strip()
+    if not lokasi:
+        await event.reply("<i>Silahkan Masukkan Nama Kota Anda</i>")
         return True
     url = f"http://muslimsalat.com/{LOKASI}.json?key=bd099c5825cbedb9aa934e255a81a5fc"
     request = requests.get(url)
