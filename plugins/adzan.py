@@ -40,4 +40,4 @@ async def cek(event):
 **Maghrib : **`{result['items'][0]['maghrib']}`
 **Isya : **`{result['items'][0]['isha']}`
 """
-    await eor(event, catresult)
+    await message.reply(event, catresult)
