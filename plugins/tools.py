@@ -118,7 +118,7 @@ async def _(event):
             ids = await event.client.parse_id(match)
         except Exception as er:
             return await event.eor(str(er))
-        return await event.reply(
+        return await event.edit(
             f"**Chat ID:**  `{event.chat_id}`\n**User ID:**  `{ids}`"
         )
     data = f"**Current Chat ID:**  `{event.chat_id}`"
