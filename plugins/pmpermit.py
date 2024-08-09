@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 """
-✘ Commands Available -
+✘ Bantuan PmPermit -
 
 • `{i}a` or `{i}approve`
     Approve someone to PM.
@@ -84,14 +84,14 @@ if udB.get_key("PM_TEXT"):
     UNAPPROVED_MSG = (
         "**PMSecurity of {ON}!**\n\n"
         + udB.get_key("PM_TEXT")
-        + "\n\nYou have {warn}/{twarn} warnings!"
+        + "\n\nLu memiliki {warn}/{twarn} warnings!"
     )
 # 1
 WARNS = udB.get_key("PMWARNS") or 4
 PMCMDS = [
-    f"{HNDLR}a",
+    f"{HNDLR}ok",
     f"{HNDLR}approve",
-    f"{HNDLR}da",
+    f"{HNDLR}ga",
     f"{HNDLR}disapprove",
     f"{HNDLR}block",
     f"{HNDLR}unblock",
@@ -232,16 +232,16 @@ if udB.get_key("PMSETTING"):
                 await asst.edit_message(
                     udB.get_key("LOG_CHANNEL"),
                     _not_approved[user.id],
-                    f"Incoming PM from **{mention}** [`{user.id}`] with **{wrn}/{WARNS}** warning!",
+                    f"Ada Chat dari **{mention}** [`{user.id}`] dengan **{wrn}/{WARNS}** peringatan!",
                     buttons=[
-                        Button.inline("Approve PM", data=f"approve_{user.id}"),
+                        Button.inline("Setujui", data=f"approve_{user.id}"),
                         Button.inline("Block PM", data=f"block_{user.id}"),
                     ],
                 )
             except KeyError:
                 _not_approved[user.id] = await asst.send_message(
                     udB.get_key("LOG_CHANNEL"),
-                    f"Incoming PM from **{mention}** [`{user.id}`] with **1/{WARNS}** warning!",
+                    f"Ada Chat dari **{mention}** [`{user.id}`] dengan **1/{WARNS}** warning!",
                     buttons=[
                         Button.inline("Approve PM", data=f"approve_{user.id}"),
                         Button.inline("Block PM", data=f"block_{user.id}"),
