@@ -93,17 +93,17 @@ async def _(event):
         previous_message = await event.get_reply_message()
         text = previous_message.message
     else:
-        return await reply(
+        return await eor(
             event, f"`{HNDLR}tr LanguageCode` as reply to a message", time=5
         )
-    lan = input or "en"
+    lan = input or "id"
     try:
         tt = translate(text, lang_tgt=lan)
         output_str = f"**DI TRANSLET** ke {lan}\n{tt}"
-        await event.reply(output_str)
+        await event.edit(output_str)
     except Exception as exc:
         LOGS.exception(exc)
-        await event.reply(str(exc), time=5)
+        await event.eor(str(exc), time=5)
 
 
 @ultroid_cmd(
@@ -117,7 +117,7 @@ async def _(event):
         try:
             ids = await event.client.parse_id(match)
         except Exception as er:
-            return await event.reply(str(er))
+            return await event.eor(str(er))
         return await event.reply(
             f"**Chat ID:**  `{event.chat_id}`\n**User ID:**  `{ids}`"
         )
@@ -140,7 +140,7 @@ async def _(ult):
         try:
             chat = await ult.client.parse_id(input_str)
         except Exception as e:
-            return await ult.reply(str(e))
+            return await ult.eor(str(e))
     else:
         chat = ult.chat_id
     try:
@@ -182,7 +182,7 @@ async def _(e):
     if not (reply and reply.media):
         return await e.reply("`Reply to a gif or audio file only.`")
     if "audio" in mediainfo(reply.media):
-        msg = await e.reply("`Downloading...`")
+        msg = await e.eor("`Downloading...`")
         try:
             bbbb = await reply.download_media(thumb=-1)
         except TypeError:
