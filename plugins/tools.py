@@ -100,7 +100,7 @@ async def _(event):
     try:
         tt = translate(text, lang_tgt=lan)
         output_str = f"**DI TRANSLET** ke {lan}\n{tt}"
-        await event.edit(output_str)
+        await event.eor(output_str)
     except Exception as exc:
         LOGS.exception(exc)
         await event.eor(str(exc), time=5)
