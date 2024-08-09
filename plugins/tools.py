@@ -74,7 +74,7 @@ from . import (
     check_filename,
     con,
     download_file,
-    eor,
+    reply,
     get_string,
 )
 from . import humanbytes as hb
@@ -93,7 +93,7 @@ async def _(event):
         previous_message = await event.get_reply_message()
         text = previous_message.message
     else:
-        return await eor(
+        return await reply(
             event, f"`{HNDLR}tr LanguageCode` as reply to a message", time=5
         )
     lan = input or "en"
@@ -117,7 +117,7 @@ async def _(event):
         try:
             ids = await event.client.parse_id(match)
         except Exception as er:
-            return await event.eor(str(er))
+            return await event.reply(str(er))
         return await event.reply(
             f"**Chat ID:**  `{event.chat_id}`\n**User ID:**  `{ids}`"
         )
@@ -140,7 +140,7 @@ async def _(ult):
         try:
             chat = await ult.client.parse_id(input_str)
         except Exception as e:
-            return await ult.eor(str(e))
+            return await ult.reply(str(e))
     else:
         chat = ult.chat_id
     try:
@@ -154,7 +154,7 @@ async def _(ult):
                 mentions += f"\n• {inline_mention(x)} `{x.id}`"
     except Exception as e:
         mentions += f" {str(e)}" + "\n"
-    await ult.eor(mentions)
+    await ult.reply(mentions)
 
 
 @ultroid_cmd(
@@ -163,7 +163,7 @@ async def _(ult):
 async def _(ult):
     input_ = ult.pattern_match.group(1).strip()
     if not input_:
-        return await ult.eor("`Input some link`", time=5)
+        return await ult.reply("`Input some link`", time=5)
     text = None
     if len(input_.split()) > 1:
         spli_ = input_.split()
@@ -171,7 +171,7 @@ async def _(ult):
         text = spli_[1]
     if not text:
         text = "ㅤㅤㅤㅤㅤㅤㅤ"
-    await ult.eor(f"[{text}]({input_})", link_preview=False)
+    await ult.reply(f"[{text}]({input_})", link_preview=False)
 
 
 @ultroid_cmd(
@@ -180,9 +180,9 @@ async def _(ult):
 async def _(e):
     reply = await e.get_reply_message()
     if not (reply and reply.media):
-        return await e.eor("`Reply to a gif or audio file only.`")
+        return await e.reply("`Reply to a gif or audio file only.`")
     if "audio" in mediainfo(reply.media):
-        msg = await e.eor("`Downloading...`")
+        msg = await e.reply("`Downloading...`")
         try:
             bbbb = await reply.download_media(thumb=-1)
         except TypeError:
@@ -218,7 +218,7 @@ async def _(e):
         await msg.delete()
         [os.remove(k) for k in [audio.name, thumb]]
     elif mediainfo(reply.media) == "gif" or mediainfo(reply.media).startswith("video"):
-        msg = await e.eor("**Creating video note**")
+        msg = await e.reply("**Creating video note**")
         file = await reply.download_media("resources/downloads/")
         if file.endswith(".webm"):
             nfile = await con.ffmpeg_convert(file, "file.mp4")
@@ -236,7 +236,7 @@ async def _(e):
         await msg.delete()
 
     else:
-        await e.eor("`Reply to a gif or audio file only.`")
+        await e.reply("`Reply to a gif or audio file only.`")
 
 
 FilesEMOJI = {
@@ -267,7 +267,7 @@ async def _(e):
         files += "/*"
     files = glob.glob(files)
     if not files:
-        return await e.eor("`Directory Empty or Incorrect.`", time=5)
+        return await e.reply("`Directory Empty or Incorrect.`", time=5)
     folders = []
     allfiles = []
     for file in sorted(files):
@@ -330,7 +330,7 @@ async def _(e):
     try:
         if (flc + foc) > 100:
             text = text.replace("`", "")
-        await e.eor(text)
+        await e.reply(text)
     except MessageTooLongError:
         with io.BytesIO(str.encode(text)) as out_file:
             out_file.name = "output.txt"
@@ -352,10 +352,10 @@ async def lastname(steal):
     elif message:
         user_id = message.sender_id
     else:
-        return await steal.eor("`Use this command with reply or give Username/id...`")
+        return await steal.reply("`Use this command with reply or give Username/id...`")
     chat = "@SangMataInfo_bot"
     id = f"/search_id {user_id}"
-    lol = await steal.eor(get_string("com_1"))
+    lol = await steal.reply(get_string("com_1"))
     try:
         async with steal.client.conversation(chat) as conv:
             try:
@@ -391,12 +391,12 @@ async def lastname(steal):
 
 @ultroid_cmd(pattern="webshot( (.*)|$)")
 async def webss(event):
-    xx = await event.eor(get_string("com_1"))
+    xx = await event.reply(get_string("com_1"))
     xurl = event.pattern_match.group(1).strip()
     if not xurl:
-        return await xx.eor(get_string("wbs_1"), time=5)
+        return await xx.reply(get_string("wbs_1"), time=5)
     if not (await is_url_ok(xurl)):
-        return await xx.eor(get_string("wbs_2"), time=5)
+        return await xx.reply(get_string("wbs_2"), time=5)
     path, pic = check_filename("shot.png"), None
     if async_playwright:
         try:
@@ -442,7 +442,7 @@ async def magic(event):
     try:
         match = event.text.split(maxsplit=1)[1].strip()
     except IndexError:
-        return await event.eor("`Provide url to turn into tiny...`")
+        return await event.reply("`Provide url to turn into tiny...`")
     data = {
         "url": match.split()[0],
         "id": match[1] if len(match) > 1 else secrets.token_urlsafe(6),
@@ -455,7 +455,7 @@ async def magic(event):
     )
     response = data.get("response", {})
     if not response.get("status"):
-        return await event.eor(f'**ERROR :** `{response["message"]}`')
-    await event.eor(
+        return await event.reply(f'**ERROR :** `{response["message"]}`')
+    await event.reply(
         f"• **Ultroid Tiny**\n• Given Url : {url}\n• Shorten Url : {data['response']['tinyUrl']}"
     )
