@@ -163,7 +163,7 @@ async def _(ult):
 async def _(ult):
     input_ = ult.pattern_match.group(1).strip()
     if not input_:
-        return await ult.reply("`Input some link`", time=5)
+        return await ult.eor("`Input some link`", time=5)
     text = None
     if len(input_.split()) > 1:
         spli_ = input_.split()
