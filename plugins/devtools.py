@@ -311,8 +311,8 @@ async def _(event):
                 caption=f"```{cmd}```" if len(cmd) < 998 else None,
                 reply_to=reply_to_id,
             )
-        return await xx.delete()
-    await xx.edit(final_output)
+        return await xx.reply()
+    await xx.reply(final_output)
 
 
 def _stringify(text=None, *args, **kwargs):
