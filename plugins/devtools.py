@@ -229,7 +229,7 @@ async def _(event):
     if not cmd:
         return
     if not mode == "silent" and not xx:
-        xx = await event.eor(get_string("com_1"))
+        xx = await event
     if black:
         try:
             cmd = black.format_str(cmd, mode=black.Mode())
