@@ -219,7 +219,7 @@ async def _(event):
         mode = "silent"
     elif spli[0] in ["-n", "-noedit"]:
         mode = "no-edit"
-        xx = await event.reply(get_string("com_1"))
+        xx = await event
     elif spli[0] in ["-gs", "--source"]:
         mode = "gsource"
     elif spli[0] in ["-ga", "--args"]:
