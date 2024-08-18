@@ -187,7 +187,11 @@ async def _(event):
     uptime = time_formatter((time.time() - start_time) * 1000)
     owner = OWNER_NAME
     await event.reply(get_string("ping").format(end, uptime, owner))
-
+    
+@ultroid_cmd(pattern="pomg$", chats=[], type=["official", "assistant"])
+async def handler (event):
+  response = "> tai!"
+  await event.respond(response)
 
 @ultroid_cmd(
     pattern="cmds$",
