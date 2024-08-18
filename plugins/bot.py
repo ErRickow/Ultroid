@@ -190,7 +190,7 @@ async def _(event):
     
 @ultroid_cmd(pattern="pomg$", chats=[], type=["official", "assistant"])
 async def handler (event):
-  response = "> tai!"
+  response = "<blockquote> tai! </blockquote>"
   await event.respond(response, parse_mode='html')
 
 @ultroid_cmd(
